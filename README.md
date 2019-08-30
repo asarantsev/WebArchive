@@ -1,3 +1,3 @@
 # WebArchive
 
-<a href="./cv.htmt">MY CV</a>
+<a href="./cv.html">MY CV</a>
