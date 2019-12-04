@@ -11,7 +11,6 @@
 <a href = "https://github.com/asarantsev"> My GitHub</a> &nbsp;
 <a href = "https://asarantsev.github.io/WebArchive/teaching_archive.html"> Teaching Archive</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/teaching_evaluations.html"> Evaluations</a>&nbsp; 
-</b>
 </font>
 <hr/>
 
