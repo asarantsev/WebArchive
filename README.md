@@ -4,16 +4,15 @@
 <hr/>
 <b>
 <font size = "4" face = "arial">
-&nbsp; <a href = "https://wolfweb.unr.edu/~asarantsev/index.html"> Home</a> &nbsp; 
-<a href = "https://wolfweb.unr.edu/~asarantsev/cv.html"> CV</a> &nbsp; 
-<a href = "https://wolfweb.unr.edu/~asarantsev/papers.html"> Papers</a> &nbsp; 
-<a href = "https://wolfweb.unr.edu/~asarantsev/research.html"> Research</a> &nbsp; 
-<a href = "https://wolfweb.unr.edu/~asarantsev/talks.html"> Talks</a> &nbsp; 
+&nbsp; <a href = "https://asarantsev.github.io/WebArchive/cv.html"> CV</a> &nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/papers.html"> Papers</a> &nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/research.html"> Research</a> &nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/talks.html"> Talks</a> &nbsp; 
 <a href = "http://arxiv.org/a/sarantsev_a_1.html"> My arXiv</a> &nbsp; 
 <a href = "https://scholar.google.com/citations?user=AFbuANsAAAAJ&hl=en&oi=ao"> My Google Scholar</a> &nbsp; 
 <a href = "https://github.com/asarantsev"> My GitHub</a> &nbsp;
-<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_archive.html"> Teaching Archive</a> &nbsp; 
-<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_evaluations.html"> Evaluations</a>&nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/teaching_archive.html"> Teaching Archive</a> &nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/teaching_evaluations.html"> Evaluations</a>&nbsp; 
 </b>
 </font>
 <hr/>
