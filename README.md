@@ -1,7 +1,22 @@
 <div style = "height:40pt;" align = "center">
 <h1> <font face = "arial"> Andrey Sarantsev </font> </h1>
 </div>
-
+<hr/>
+<b>
+<font size = "4" face = "arial">
+&nbsp; <a href = "https://wolfweb.unr.edu/~asarantsev/index.html"> Home</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/cv.html"> CV</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/papers.html"> Papers</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/research.html"> Research</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/talks.html"> Talks</a> &nbsp; 
+<a href = "http://arxiv.org/a/sarantsev_a_1.html"> My arXiv</a> &nbsp; 
+<a href = "https://scholar.google.com/citations?user=AFbuANsAAAAJ&hl=en&oi=ao"> My Google Scholar</a> &nbsp; 
+<a href = "https://github.com/asarantsev"> My GitHub</a> &nbsp;
+<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_archive.html"> Teaching Archive</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_evaluations.html"> Evaluations</a>&nbsp; 
+</b>
+</font>
+<hr/>
 
 <div style = "width:50%;float:left;">
 <font size="4" face="arial">
