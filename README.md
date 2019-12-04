@@ -1,13 +1,3 @@
-# WebArchive
-
-<html>
-<head>
-
-
-<title > Andrey Sarantsev </title>
-</head>
-
-
 <div style = "height:40pt;" align = "center">
 <h1> <font face = "arial"> Andrey Sarantsev </font> </h1>
 </div>
