@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>MathJax TeX Test Page</title>
+</head>
+
+<body>
+
+<body>
+<div style = "height:40pt; float:center;">
+<h1 align = "center"> <font face = "arial"> Accessible LaTeX Mathematics (Detailed Version) </font> </h1>
+</div>
+
+<hr/>
+<b>
+<font size = "4" face = "arial">
+&nbsp; <a href = "https://wolfweb.unr.edu/~asarantsev/index.html"> Home</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/cv.html"> CV</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/papers.html"> Papers</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/research.html"> Research</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/talks.html"> Talks</a> &nbsp; 
+<a href = "http://arxiv.org/a/sarantsev_a_1.html"> My arXiv</a> &nbsp; 
+<a href = "https://scholar.google.com/citations?user=AFbuANsAAAAJ&hl=en&oi=ao"> My Google Scholar</a> &nbsp; 
+<a href = "https://github.com/asarantsev"> My GitHub</a> &nbsp;
+<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_archive.html"> Teaching Archive</a> &nbsp; 
+<a href = "https://wolfweb.unr.edu/~asarantsev/teaching_evaluations.html"> Evaluations</a>&nbsp; 
+</b>
+</font>
+<hr/>
+
+<font face = "arial" size = "+1">
+<div align = "center">
+<strong> <a href = "https://www.unr.edu/tlt"> Don Massie</a> and 
+<a href = "https://wolfweb.unr.edu/~asarantsev/"> Andrey Sarantsev</a> 
+<br/> <a href = "https://wolfweb.unr.edu/~asarantsev/mydocs/access.pdf"> [PDF version]</a> </strong>
+
+<h3> Abstract</h3>
+In this document, we explain how to make math content produced from a LaTeX document accessible for visually impaired students. 
+We outline some possible solutions, in particular converion of LaTeX documents to an accessible HTML-MathJax format.
+</div>
+
+<h2 align = "center"> Preliminaries </h2>
+
+For the purposes of this discussion, a document is considered <i>accessible</i> 
+if it satisfies two requirements: 
+
+<ul>
+<li> it can adequately be read by assistive technologies, such as screen readers, used by visually impaired people; 
+<li> it is <i> tagged</i> all headings, tables, lists, pictures, graphs, and other special objects must be identified as such, 
+and all pictures or graphs must have captions or alternative text. 
+</ul>
+
+Accessibility can be measured by automated tools which rate the degree of tagging and other usability supports. 
+One of them is Ally, pre-installed in Canvas, which is the University of Nevada, Reno (UNR) learning management system. 
+Another is WAVE, available as an extension of browsers. The most important way to test, however, is to use an actual screen reader: 
+JAWS (commercial), NVDA (free open-source), or others.  
+
+<br/>
+<br/>
+
+There are tools to make Word, PDF, or PowerPoint documents accessible. For example, in (commerical) Adobe Acrobat Pro 
+there are tools called <code> Accessibility</code> and the <code> Action Wizard</code>, 
+which facilitate making many types of content accessible. These tools are not in the free Adobe Acrobat Reader DC, 
+but they are freely available for UNR faculty.
+
+<br/>
+<br/>
+
+However, mathematics (and other disciplines that use many formulas) presents special problems. 
+Indeed, most math content is created in LaTeX. This is a publishing system based on TeX markup language, 
+which is used for typesetting mathematics formulas. It is widely used in Mathematics, Computer Science, 
+Statistics, Physics, Chemistry, Biology, Economics, Finance, and other disciplines with complicated formulas. 
+LaTeX is not WYSIWYG (what you see is what you get): instead one types the text with command, all starting from backslash 
+$\backslash$ which generate math symbols and formatting, in a special document <code>.tex</code> 
+which is then compiled. The output is PDF. 
+
+<br/>
+<br/>
+
+TeX language was created by Donald Knuth in 1978 and is still very widely used. 
+Mathematicians and other aforementioned disciplines rarely use Word, OpenOffice, or other WYSIWYG editors, because LaTeX
+has a much higher quality of typesetting. 
+
+<br/>
+<br/>
+
+LaTeX is a free, open-source software that works equally well on common operating systems. 
+It is available on multiple web  sites, including <a href = "https://www.latex-project.org/"> LaTeX Project.</a> 
+One can also use the online compilator Overleaf to convert from <code> .tex</code> 
+to <code>.pdf</code> There are other publishing systems based on TeX, but LaTeX is used overwhelmingly. 
+In this review, we shall use TeX and LaTeX interchangeably. 
+Below is an example of a very short LaTeX file, let us call it <code> example1.tex</code>, with 
+<a href = "https://wolfweb.unr.edu/~asarantsev/mydocs/example1.pdf"> <code> example1.pdf</code></a> output.
+
+<pre>
+<code>
+\documentclass{article} 
+\usepackage{amsfonts} 
+\begin{document} 
+Hello, world! 
+$x + y = \alpha$ 
+$$(x-y)\cdot(x+y) = x^2 - y^2$$ 
+\end{document} 
+</code>
+</pre>
+
+The dollar signs create a <i>math mode</i> between them. 
+In it, one can use math commands, such as the one which produces the greek letter <font face = "courier">alpha</font>.
+The text of <code>.tex</code>
+document outside of the math mode is called the <i>text mode.</i> The 
+<code> usepackage</code> command adds special packages which are not part of the core LaTeX
+but are often useful; the <code> amsfonts</code> 
+package adds special mathematical fonts created by the AMS (American Mathematical Society). 
+
+Two web sites: <a href = "https://www.ctan.org/"> CTAN (Comprehensive TeX Archive Network)</a>
+and <a href = "https://www.tug.org/"> TUG (TeX Users Group)</a> are repositories of TeX and LaTeX online.
+They serve as reference places for the TeX global community.
+
+<h2 align = "center"> Main Problem </h2>
+
+This language cannot, however, create an accessible PDF. 
+The PDF output is not tagged, and therefore not accessible.
+<a href = "https://www.washington.edu/doit/how-can-i-create-math-and-science-documents-are-accessible-students-visual-impairments">
+More information (University of Washington in Seattle)</a>
+
+<br/>
+<br/>
+
+Our goal is to find a way to make mathematics typed in TeX, as a PDF or otherwise, accessible. 
+Our target audience is an average professor, researcher, or graduate student. 
+These people are familiar with their research area, with at least basics of scientific publishing, and have a basic knowledge of 
+LaTeX. Many in our target audience know basic HTML.  This is the markup language used by all browsers to create Web pages.
+We assume knowledge of HTML is good enough to write simple personal pages. 
+We do not assume knowledge of CSS (Cascading Style Sheets), a more sophisticated technique on top of HTML which enables different 
+<i>styles</i>.
+
+<br/>
+<br/>
+
+Such users often do not know a <i> command line</i> interface <font face = "courier">cmd</font>. 
+They do not want to learn a new language (programming or markup), or a new piece of software. 
+In general, they are busy with research and teaching, and therefore do not wish to invest a lot of time and effort. 
+
+<br/>
+<br/>
+
+It is surprisingly hard to find a way to make formulae, equations, and special characters  accessible. 
+It seems that in the TeX community, this is still an active research and development topic. 
+The technology is relatively unfinished, and not standardized. One needs to look on online forums, most importantly 
+<a href = "https://tex.stackexchange.com/"> TeX Stack Exchange</a>
+(a Q&A service developed specifically for TeX users), and 
+<a href = "https://stackoverflow.com/"> Stack Overflow</a>
+(a general Q&A forum for information technology and computer science). 
+ 
+<br/>
+<br/>
+
+We found that there is no universally good solution for an accessible output from LaTeX. 
+However, we describe in detail one method which we found the best for making much mathematical content work with screen readers. 
+We also describe issues arising from such conversion, and whether they require manual intervention. 
+Finally, we mention several potential paths which we tested and did not find them satisfactory. 
+However, they might be useful for more sophisticated users, or for subsequent research on this topic.  
+
+<h2 align = "center"> Our Solution: LaTeX to HTML </h2>
+
+In this section, we focus on the process that seems the most promising: converting LaTeX
+documents to HTML (Hyper Text Markup Language) format, which can be read by browsers such as Chrome or Firefox. 
+These publishers use MathJax plugin for HTML, developed by AMS (American Mathematical Society), in part to make mathematics accessible. 
+MathJax can read \LaTeX\, commands and formulas in <i>math mode</i> as if it were LaTeX itself. 
+In the rest of Section 3, we describe in more detail the HTML format and MathJax plugin. 
+We choose the Pandoc online converter for its simplicity. 
+Then we describe which features of  LaTeX can and which cannot be translated to the HTML-MathJax. 
+
+<h3> Industry motivation</h3>
+
+An additional motivation for converting LaTeX to HTML-MathJax arises from reviewing documents 
+published by Elsevier, Springer, and Taylor & Francis (leading publishing houses), 
+to make mathematics accessible in academic monographies, textbooks and journals. 
+Given that they publish hundreds of journals, it is likely that they have a professional converting program. 
+We do not have such resources. However, later we describe some free online tools, and how to overcome their limitations. 
+
+ 
+
+<h3> HyperText Markup Language (HTML)</h3>
+
+HTML is the markup language used by all browsers to create Web pages. 
+The newest version is called HTML5; by default we refer to this version. Its commands are called <i>tags</i>. 
+These tags correspond to the tags in PDF documents mentioned in the beginning of Section 1, which are crucial for accessibility. 
+
+HTML can include scripts, which add functionality and roughly correspond to using additional packages in LaTeX. An example:
+
+<pre>
+<code>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Example  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;font face = ``arial'' size = ``+1''&gt;
+&lt;h1&gt; Main Title &lt;/h1&gt;
+&lt;h2&gt; Details  &lt;/h2&gt;
+&lt;p&gt; Hello, world! &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<a href = "https://wolfweb.unr.edu/~asarantsev/test4.html"> The result is here.</a>
+
+<br/>
+<br/>
+
+We used the font <code>Arial</code> because it is sans-serif; the default font for HTML is Times New Roman, which has serifs; 
+for screens, sans-serif fonts are recommended to ease the cognitive burden for people with certain learning and/or visual impairments.
+
+<br/>
+<br/>
+
+<strong> Remark.</strong> Usually, a heading of the first order <code> &lt;h1&gt;</code> 
+coincides with the title. In this case, instead of <i>Example</i>, we shall have <i>Main Title</i>.
+
+<br/>
+<br/>
+
+An important feature of HTML is <i> hyperlinks.</i> For example:
+
+<pre>
+<code>
+&lt;a href = ``https://www.unr.edu/''&gt; University of Nevada, Reno &lt;/a&gt;
+</code>
+</pre>
+
+is the link to the UNR web site. To make content within your web page linkable, create an <i>anchor:</i> 
+
+<pre>
+<code>
+&lt;a href = ``[URL of this link]''&gt; [descriptive name of your content] &lt;/a&rt;
+</code>
+</pre>
+ 
+then refer to this anchor as 
+
+<code>
+[web-page-address]# [URL of this link].
+</code>
+
+<h3> MathJax </h3>
+
+MathJax is a script in HTML that can visualize math formulas in a browser as LaTeX would. 
+It was created by the American Mathematical Society (AMS) for screen-readers and accessibility, see 
+<a href = "https://www.mathjax.org/"> MathJax web site.</a> 
+It can be enabled by adding to the preamble the following text: 
+
+<pre>
+<code>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/ 2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"&gt; &lt;/script&gt;
+</code>
+</pre>
+
+To use the dollar signs for formulas in MathJax, one should add to the preamble the following script:
+<pre> <code>
+&lt;script type = `text/x-mathjax-config' MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});}&gt; &lt;/script&gt;
+</code> </pre>
+
+We do not need this latter preamble  if we convert LaTeX to HTML via Pandoc.
+
+<h3> Converters</h3>
+
+The markup languages LaTeX and HTML are different; they format tables, sections, lists, etc. differently. 
+One needs a translator between them, and they are available: <code>tex4ht, htlatex, LaTeX2HTML, Hevea</code> and others. 
+See <a href = "https://texfaq.org/FAQ-LaTeX2HTML"> FAQ</a> for more information. 
+They seem to do a good job, but require using the command line <code>cmd</code>
+ since these commands are not built in the usual TeX interface such as TeXworks. 
+We did not assume audience familiarity with this, but of course it could greatly simplify this process. 
+
+One commercial converter which seems to be good is <b>MicroPress TeXpider</b>. It is marketed as <i>A tool that really works,</i> 
+which is a big claim in this area. Unlike all other programs mentioned above except for Adobe Acrobat Pro, this converter is not free;
+ it costs $100 for individuals. We did not test this tool, 
+and it remains to be seen how accessible and screen-readable these outputs really are. 
+
+<h3> Pandoc: Our Choice</h3>
+
+One online tool that we found satisfactory is <a href = "https://pandoc.org"> Pandoc.</a> Go to <i>Demos</i>, then 
+<i>Try Pandoc online.</i> In the original window (visual left side), choose LaTeX format. In the target window (visual right side), 
+choose HTML5. Then copy the body of your LaTeX document to the left-side window, and click <i>convert</i>. 
+You might need to copy this bit by bit, because there is a limit on the document size. 
+The resulting math mode in HTML is compatible with MathJax. This converter creates 
+<code>
+&lt;span class="math inline"&gt;*&lt;/span&gt;
+</code>
+around the inline math mode (where the asterisk stands for LaTeX math content), 
+converting from single dollar signs in LaTeX; and 
+<code>
+&lt;span class="math display"&gt;*&lt;/span&gt;
+</code>
+around the display math mode, converting from double dollar signs in LaTeX. 
+
+<br/>
+<br/>
+
+With the second preamble above, one need not worry about single and double dollar signs, 
+since MathJaX will automatically recognize them as inline or display math mode. For a LaTeX 
+document with plain text outside of dollar signs, simply copy-paste this LaTeX in HTML, 
+without Pandoc, and put the two preambles above it. 
+
+<h3> Summary</h3>
+
+<b> Create HTML-MathJax documents by putting scripts mentioned above in the preamble, and (if necessary) converting the body of
+LaTeX to HTML via Pandoc.</b>
+
+<br/>
+<br/>
+
+This produces a good-looking, screen-readable, accessible document. In our tests, JAWS (a common screen reader) 
+was able to read much of text and math.
+
+However, our job is not finished. This conversion process can do most things, but not all. Below, we describe some of the possible issues, and whether they are actually solved by Pandoc or need to be edited manually. Some of them apply more to research papers rather than short lecture notes or homework/exam files. 
+
+
+
+<h2 align = "center"> Pandoc Issues </h2>
+
+<h3> Sections and Headings </h3>
+
+LaTeX uses commands <font face = "courier"> section, subsection, subsubsection.</font> 
+This corresponds to the document class <font face = "courier"> article. </font> In the class <font face = "courier">book</font> 
+we also have command <font face = "courier"> chapter.</font> HTML uses <i> headings: </i> 
+<font face = "courier"> &lt;h1&gt; </font> for main topics, 
+<font face = "courier"> &lt;h2&gt; </font> for subtopics, up to 
+<font face = "courier"> &lt;h6&gt; </font> for sequential categories. Often,
+<font face = "courier"> &lt;h1&gt; </font> is the title of the page. 
+Pandoc converts  them well, and no manual work is required (unless the author wants to change the size of headings). 
+
+<h3> Lists </h3>
+
+Both markup languages have commands for numbered lists and bulleted lists. 
+Pandoc works well here, too. No manual work is required, except for the following case: LaTeX package 
+<font face = "courier"> enumitem </font> allows one to produce lettered lists, with 
+<font face = "courier"> [a], [b], [c] </font> items. 
+Since this requires a special package, we doubt that Pandoc will covert this to HTML format. 
+In HTML, there is an option for bulleted lists with bullet points having special shapes, such as squares. 
+In our tests, Pandoc failed to adequately convert similar LaTeX lists, 
+where changing the shape of this bullet is more difficult. It can be done manually in HTML, if desired. 
+However, this level of control is often optional and not essential in practice. 
+
+<h3> Metadata </h3>
+
+LaTeX has special commands for authors, title, keywords, abstract, and AMS subject classification. 
+Pandoc does not translate them, but simply removes them. The author must reproduce these in HTML-MathJax manually. 
+However, these are not required for screen reader accessibility (except the title). 
+
+<h3> Images </h3>
+
+For external images attached to LaTeX such as PDF, PNG, JPG, Pandoc transfers LaTeX pictures commands to the HTML commands: 
+the LaTeX environment <font face = "courier">figure</font> is converted into HTML tag 
+<font face = "courier"> &lt;figure&gt; </font>, and the LaTeX environment 
+<font face = "courier"> figure* </font> the (star means no automatic numbering) is converted into <code> <pic> </code> 
+Unfortunately, there is no way to convert automatic LaTeX numbering to HTML. One should do it manually, as for theorems. 
+Two- or many-part pictures in LaTeX are converted into separate pictures in HTML. One can draw simple pictures in LaTeX itself. 
+We select two well-known LaTeX packages.
+
+<ol>
+<li> <strong>Xy-pic.</strong> This package is good for diagrams. MathJax can be made Xy-pic friendly with 
+<a href = "http://sonoisa.github.io/xyjax/xyjax.html"> XyJax.</a>  
+But this software is still under development. More importantly, it requires the use of command prompt, 
+which we assumed the audience does not know. 
+ 
+<li> <strong>TikZ.</strong> This is a powerful package that allows the user to draw the following types of pictures in LaTeX: 
+arrows, circles, nodes, other geometric figures. However, there is no way to make TikZ MathJax-compatible. 
+We would recommend creating separate pictures in JPG or PDF from TikZ or Xy-pic, and then include them in the HTML document. 
+</ol>
+
+<h3> Equation Numbering </h3>
+
+As discussed before, Pandoc does a great job converting math to a MathJax-readable form inside an HTML document. 
+However, a user needs to do some manual work to convert references to equations. In LaTeX, we have:
+
+<br/>
+<br/>
+
+<strong> LaTeX Code</strong>
+
+<pre>
+<code>
+\begin{equation}
+\label{this}
+(a + b)^2 = a^2 + 2ab + b^2
+\end{equation}
+We refer to equation \eqref{this}.
+</code>
+</pre>
+
+<strong> <a href = "https://wolfweb.unr.edu/~asarantsev/mydocs/example2.pdf"> PDF Output </a> </strong>
+
+<br/>
+<br/>
+
+<strong> <a href = "https://wolfweb.unr.edu/~asarantsev/test5.html"> Pandoc HTML output </a> </strong>
+
+<br/>
+<br/>
+
+The number (1) would not appear. We need to manually change 
+<font face = "courier"> [this] </font> 
+There is a way in LaTeX
+to make references dependent on a section; for example, the second equation in the third section will be numbered as (3.2). 
+We did not test this in Pandoc; this is left for future research. 
+
+<h3> Tables </h3>
+
+LaTeX and HTML have different commands for tables, but Pandoc seems to convert them very well. No manual work is required.
+
+<h3> Theorems, Definitions, and Other Environments </h3>
+
+In mathematics, theorems, lemmas, definitions etc. are formatted as separate text blocks, and their names are in boldface. 
+In addition, theorems and lemmas (but not definitions) have statements which are italicized. In LaTeX, there are built-in 
+<i> environments:</i> 
+pieces of text which have special formatting inside. We already saw the environment 
+<font face = "courier"> equation</font> which creates math mode in a separate line. Here is an example of the environment 
+<font face = "courier"> theorem.</font> 
+The LaTeX command <font face = "courier"> label </font>
+has an argument, which is the label assigned to this theorem. This is very similar to the concept of an
+<i> anchor </i> in HTML. We refer to this label via the LaTeX command <font face = "courier"> ref. </font>
+
+<br/>
+<br/>
+
+<strong> LaTeX Code</strong>
+
+<pre>
+<code>
+\begin{theorem}
+\label{that}
+We have: $x + y  = z$.
+\end{theorem}
+We refer to Theorem \ref{that}.
+</code>
+</pre>
+
+<a href = "https://wolfweb.unr.edu/~asarantsev/mydocs/example3.pdf"> Output </a>
+
+<br/>
+<br/>
+
+<strong> Remark. </strong> The command <font face = "courier">ref</font> unlike <font face = "courier">eqref</font> 
+does not provide brackets around the number.
+
+<br/>
+<br/>
+
+In the LaTeX preamble, put <font face = "courier"> \newtheorem{theorem}[Theorem] </font>
+to use this environment. The process is similar for 
+<font face = "courier"> lemma, proposition, definition, example, remark,</font> and other commonly used 
+<i> statement environments </i>(environments used to format statements). 
+Note that text is commonly italicized inside the <i> theorem-type environments:</i> 
+<font face = "courier"> theorem, lemma, proposition,</font> but not inside other environments, mentioned above. 
+
+Theorems and other types of environments are automatically numbered: the second environment 
+<font face = "courier">theorem</font> produces <strong> Theorem 2.</strong> 
+One can number environments of different types together, and include the section number in the theorem number 
+(<strong> Theorem 3.2 </strong>).
+
+Unfortunately, Pandoc simply removes these theorem environment commands, because it cannot process them. 
+The only way is to manually create a special heading for the theorem, and to manually italicize the internal text in HTML. 
+
+<br/>
+<br/>
+
+<strong> Remark. </strong>
+One can use CSS to automate formatting theorems, definitions, and other environments, see 
+<a href = "http://felix11h.github.io/blog/mathjax-theorems"> GitHub.</a> 
+However, we assumed that our audience does not know CSS. 
+Regardless, using CSS does not support automatic numbering and references: 
+One must do references manually: <font face = "courier"> &lt;a link = ``[text]''&gt; </font> 
+<font face = "courier"> &lt;a href = ``[text]''&gt; </font>
+
+<h3> Macros </h3>
+ 
+LaTeX allows users to define short versions of commands and even new commands: Instead of typing 
+<font face = "courier"> \Rightarrow </font> for the symbol, we write 
+<font face = "courier"> \newcommand{\Ra}{\Rightarrow} </font>
+in the preamble, and then continue typing <font face = "courier"> \Ra </font> in the main text. 
+To replicate this in HTML-MathJax, please type
+ 
+This HTML code will not be displayed on the web page, but will be treated as a macro by MathJax. 
+The same can be done for more complicated commands with arguments, such as 
+<font face = "courier"> \norm{a}</font> with an argument <font face = "courier"> a,</font> 
+defined as <font face = "courier"> \newcommand{\norm}[1]{\lVert\#1\rVert} </font> 
+This gives us <font face = "courier"> \norm{a} </font> 
+This method works for the command <font face = "courier">\DeclareMathOperator</font> 
+which is used when we wish to type for example <font face = "courier">\exp</font> not 
+<font face = "courier">exp</font> in math mode. This last <font face = "courier">exp</font> 
+looks like italics <i>exp</i>, but actually these are letters <font face = "courier">exp</font> in math mode. 
+ 
+ 
+<h3> Bibliography</h3>
+
+LaTeX can automatically create bibliographies in two ways.
+
+<ol>
+<li> <strong> Inside the main document.</strong> <font face = "courier"> thebibliography</font> 
+allows to create citations:  <font face = "courier"> \cite{Book} [citation text] </font> 
+and then refer to them as <font face = "courier"> \ref{Book}. </font> 
+The output will look like <font face = "courier"> [23] </font> or <font face = "courier"> [KS91].</font> 
+Note the square brackets here, as opposed to round brackets for equation references, and no brackets for theorem references. 
+Pandoc converts citations, but does not allow referencing. We introduce referring tags manually, as described above. 
+
+<li> <strong> From separate reference <font face = "courier"> .bib </font> file.</strong> 
+This requires a separate command <font face = "courier"> BibTeX</font> which is usually built in the TeX interface. 
+However, this does not seem to be compatible with HTML-MathJax, at least without special packages and the command line. 
+</ol>
+
+
+<h3> Accents </h3>
+
+LaTeX can create accents for  names of non-English origin: 
+<font face = "courier"> Poincar\'e</font> for Poincare, <font face = "courier">It\^o</font> for Ito, and others. 
+HTML can do this, see <a href = "http://sites.psu.edu/symbolcodes/codehtml/"> Pennsylvania State University.</a> 
+Pandoc does not convert this. One would need to do this manually in HTML.
+
+<h2 align = "center"> MathML and Canvas </h2>
+
+<a href = "https://www.w3.org/Math/"> MathML</a> is a markup language created for browsers to display math content. 
+However, this is not as simple as transferring the LaTeX code to the HTML source. Rather, 
+this is a completely different markup language, a derivative of <i> Extensible Markup Language </i> (XML). 
+
+<br/>
+<br/>
+
+MathML is used within HTML, and is compatible with (more advanced) CSS. In fact, MathJax works by converting LaTeX
+formulae to MathML on the go: When we use MathJax, we implicitly use MathML. 
+This language is screen-readable and tagged in HTML. See 
+<a href = "http://www.csun.edu/~hcmth008/technology.html"> Jacek Polewszak, California State University in Northridge,</a> 
+and <a href = "http://accessibility.psu.edu/math/"> Pennsylvania State University.</a>
+
+<br/>
+<br/>
+
+Canvas (the UNR learning management system, also known as WebCampus) uses MathML in its math mode. 
+In fact, if you create math using <i>Insert Math Equation</i> button in Edit mode, 
+and then switch to HTML editor mode instead of Rich Text mode, you can see the HTML/MathML script. 
+The <i>Advanced Option</i> mode in Canvas coverts LaTeX into MathML. 
+Such script is displayed correctly in browsers (outside Canvas). 
+
+<br/>
+<br/>
+
+However, to the best of our knowledge, this math content is not screen-readable. 
+This seems strange, because in our tests MathML was correctly read by a screen reader. 
+By the way, HTML/MathJax script inside <i>HTML mode</i> 
+of Canvas does not render properly: Canvas cuts the preamble which includes MathJax. 
+
+<br/>
+<br/>
+
+WebCampus has MathJax installed in its LaTeX, plugin. 
+Thus math typed via this plugin is readable by the screen reader JAWS (not NVDA) in our tests. 
+
+<br/>
+<br/>
+
+There are command line executions for converting LaTeX to MathML. Online converters can be found on 
+<a href = "https://www.mathtowebonline.com/"> Math to Web Online.</a> 
+But it failed in our tests. Another converter is <a href = "http://math.etsu.edu/LaTeXMathML/"> LaTeXMathML.</a> 
+(We did not test this.) We did not find such an option in Pandoc online. Let us also mention the commercial editor 
+<font face = "courier">MathType</font> (we have yet to test it).  
+
+<br/>
+<br/>
+
+Unfortunately, MathML is very primitive: It is hard to type even a simple formula. 
+It requires learning yet another markup language, because it is different from both LaTeX and basic HTML. 
+Thus one should either use MathJax or convert LaTeX into MathML using a converting software 
+(some are mentioned earlier in this section). Also, some users claim that MathML does not work in Google Chrome without MathJax 
+(although we had a different experience). All in all, MathML does not seem to give us any advantage over MathJax, 
+except that pure MathML is rendered on the screen faster than MathJax.
+
+<h2 align = "center"> Tried and Failed Methods </h2>
+
+<h3> LaTeX Packages and Their Failures </h3>
+
+One can include packages in LaTeX by the command 
+<font face = "courier"> \usepackage{[packagename]}.</font> 
+There exist packages devoted to accessibility. One is <font face = "courier">accessibility</font>
+designed by Babett Schaltz as her Ph.D. thesis. See the links on 
+<a href = "https://tex.stackexchange.com/"> TeX Stack Exchange:</a>
+
+<a href = "https://tex.stackexchange.com/questions/261537/"> Question 1,</a>  
+<a href = "https://tex.stackexchange.com/questions/19279/"> Question 2,</a> 
+<a href = "https://tex.stackexchange.com/questions/79947/"> Question 3.</a> 
+ 
+But in our trials, it does not compile some documents well, and the Ally accessibility score 
+is sometimes relatively low (70% or even lower, even for LaTeX documents with only simple commands). 
+There are improvements of this package, see the  second answer in the first link above, but they seem hard to use. 
+
+<br/>
+<br/>
+
+Some improvements exist in packages called 
+<font face = "courier">accessibility-meta</font> and <font face = "courier">corporate</font> 
+created by Andrew Clifton: see the instructions on the following web pages:
+<a href = "https://github.com/AndyClifton/AccessibleMetaClass"> AccessibleMetaClass</a> and
+<a href = "https://github.com/AndyClifton/CorporateLaTeX"> CorporateLaTeX.</a>
+But this still does not compile well. 
+
+<br/>
+<br/>
+
+There are other 6 packages on CTAN: <a href = "https://www.tug.org/twg/accessibility/"> Accessibility</a>
+and 5 packages on TUG: <a href = "https://ctan.org/topic/accessible"> Accessibility.</a> 
+Among these packages, the most important seem to be 
+<font face = "courier"> axessibility</font>  and <font face = "courier">accsupp.</font> 
+But they failed in our compiling tests. 
+
+<h3> Alternative Publishing Systems </h3>
+
+As mentioned in Section 1, there exist other publishing systems: 
+<a href = "https://tug.org/xetex/"> XeTeX,</a> 
+<a href = "https://www.overleaf.com/learn/latex/XeLaTeX"> XeLaTeX,</a> 
+<a href = "https://texfaq.org/FAQ-context"> ConTeXt,</a> and others. Some  
+<a href = "https://tex.stackexchange.com/questions/418954/"> are proposed as tools for accessibility.</a> 
+However, in our tests, these have failed to compile or create accessible PDF documents, as measured by Ally. 
+Also, these systems are not widely known. 
+ 
+
+<h2 align = "center"> Summary and Recommendations </h2>
+ 
+We described a way to make LaTeX accessible for visually impaired students via conversion through Pandoc to HTML-MathJax. 
+We discussed in detail that Pandoc does not convert everything automatically, and we need to do some work manually. 
+This is especially true for research articles, not so much for lecture notes and assignments. 
+In other words, it is easier to deal with materials for undergraduate teaching than it is with research papers. 
+
+<br/>
+<br/>
+
+Note that WebCampus has MathJax installed in its LaTeX plugin. Thus math typed via this plugin is readable by 
+the screen reader JAWS (not NVDA) in our tests. 
+Thus we state the following recommendations for busy faculty who wish to maximize accessibility while minimizing their 
+time commitment. There are five options, listed below from most to least preferable:
+
+<ol>
+<li> For your teaching, type math in Web Campus via the LaTeX plugin, instead of uploading prepared PDF files. 
+<li> Instead of converting previously created LaTeX content to PDF, convert it to HTML-MathJax via Pandoc as described above. 
+If it is hard to preserve all automatic numbering and references, 
+you are welcome to just skip it. Usually teaching materials do not have much of such content.
+<li> Published HTML filed can be added and used as files in Canvas. 
+Students can open them in a browser and use assistive technologies, such as screen readers, if desired. 
+<li> For publications in Springer, Elsevier, and other publishing houses which have HTML-MathJax versions of articles on their Web sites together with PDF versions, just refer the student to them. 
+<li> If nothing else works, talk to students individually and refer them to the 
+<a href = "https://www.unr.edu/drc"> Disability Resource Center (DRC)</a> and 
+<a href = "https://www.unr.edu/tlt"> Teaching and Learning Technologies (TLT).</a>
+</ol>
+
+Technology in this area is still new and not universally accepted. 
+An initial focus of scientists and instructors was to create math that will display properly, 
+and now we are learning how to make that math read well with assistive technologies to improve the user experience 
+and to satisfy accessibility compliance guidelines. More cooperation is needed, in the spirit of respect and mutual trust. 
+Another reason that there is not currently in-depth accessibility support is because this technology 
+is that this technology is created mostly free and open source by professors and graduate students 
+in their spare time. We hope that usage will coalesce around one best model, which becomes universally accepted. 
+This has indeed happened with other aspects of mathematical publishing. Further research is needed, because this technology 
+is still very much emerging.
+
+
+<br/>
+<br/>
+
+</body>
+</html>
+
