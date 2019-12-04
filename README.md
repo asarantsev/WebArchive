@@ -40,7 +40,7 @@ Soumik Pal.</a>
 <p> <b> Fall 2019 Teaching:</b> </p>
 <p> <a href = "./stat461_au19.html"> <b>STAT 461</b></a> (Probability Theory) </p>
 <p> <a href = "./stat462_au19.html"> <b>STAT 462</b></a> (Stochastic Processes) </p>
-<p> <a href = "./mydocs/notes.pdf"> Lecture Notes on Probability Theory 
+<p> <a href = "./notes.pdf"> Lecture Notes on Probability Theory 
 and Stochastic Processes </a> </p>
 <p> <strong> Office: </strong> Davidson Math & Science Center 234 </p>
 <p> <strong> E-mail: </strong> <font face = "courier"> asarantsev[_a_ _t_]unr.edu </font> </p>
