@@ -58,6 +58,6 @@ and Stochastic Processes </a> </p>
 <p> <b> Accessible LaTeX Mathematics </b> &nbsp; <a href = "./access.html">[short]</a> 
 &nbsp; <a href = "./accessdetail.html">[detailed]</a> &nbsp; 
 <a href = "./access.pdf">[PDF]</a>
- </div>
+
  
 
