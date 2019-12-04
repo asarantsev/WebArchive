@@ -57,7 +57,7 @@ and Stochastic Processes </a> </p>
 <p> <strong> Office: </strong> Davidson Math & Science Center 234 </p>
 <p> <strong> E-mail: </strong> <font face = "courier"> asarantsev[_a_ _t_]unr.edu </font> </p>
 <p> <strong> Mail: </strong> 1664 N Virginia St, Reno, NV 89557 </p>
-<p> <b> Accessible LaTeX Mathematics </b> &nbsp; <a href = "./accessdetail.html">[short]</a> 
+<p> <b> Accessible LaTeX Mathematics </b> &nbsp; <a href = "./access.html">[short]</a> 
 &nbsp; <a href = "./accessdetail.html">[detailed]</a> &nbsp; 
 <a href = "./access.pdf">[PDF]</a>
  </div>
