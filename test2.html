@@ -1,0 +1,285 @@
+<html>
+<head>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+  }
+});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<div style="display:none">
+\(
+\newcommand{\MP}{\mathbb{P}}
+\newcommand{\MQ}{\mathbb{Q}}
+\newcommand{\CH}{\mathcal{H}}
+\newcommand{\md}{\mathrm{d}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\BR}{\mathbb R}
+\newcommand{\mP}{\mathbf{P}}
+\newcommand{\fn}{\mathbf{n}}
+\newcommand{\pa}{\partial}
+\)
+</div>
+</head>
+<body>
+<font face = "verdana">
+<h1> A Note on Transportation Cost Inequalities for Diffusions with Reflections </h1>
+<h2> Authors </h2> 
+<font size = "+1">
+<strong> Soumik Pal </strong> 
+Department of Mathematics, University of Washington, Seattle <br/> <br/>
+<strong> Andrey Sarantsev </strong>
+Department of Mathematics and Statistics, University of Nevada, Reno 
+</font>
+<br/>
+<br/>
+Electronic Communications in Probability (2019)
+
+<h2> Abstract </h2>
+We prove that reflected Brownian motion with normal reflections in a convex domain satisfies a dimension free 
+Talagrand type transportation cost-information inequality. The result is generalized to other reflected diffusion processes 
+with suitable drift and diffusion coefficients. We apply this to get such an inequality for interacting Brownian particles 
+with rank-based drift and diffusion coefficients such as the infinite Atlas model. 
+This is an improvement over earlier dimension-dependent results.
+
+<h1> 1. Introduction and the Main Results</h1> 
+
+Consider a metric space $(E, \rho)$. Fix $p \in [1, \infty)$. For any pair of Borel probability measures $\MP$ and $\MQ$ on $E$, 
+define the Wasserstein distance of order $p$ as 
+$$
+W_p(\MP, \MQ) := \inf\limits_{\pi\in \Pi}\left[\iint\rho^p(x, y)\md\pi(x, y)\right]^{1/p},
+$$
+where the $\inf$ is taken over the set $\Pi$ of all <i> couplings</i> 
+of $\MP$ and $\MQ$ (i.e., measures on $E\times E$ with marginal distributions $\MP$ and $\MQ$). 
+Here and throughout, when we write $\mu(f)$, where $\mu$ is a probability measure and $f$ is a $\mu$-integrable function, 
+we mean the expectation of $f$ with respect to $\mu$. The <i> relative entropy </i> 
+$\CH(\MQ\mid\MP)$ of $\MQ$ with respect to $\MP$ is defined as
+$$
+\CH(\MQ\mid\MP) := 
+\MQ\left[\log\frac{\md\MQ}{\md\MP}\right] = \MP\left[\frac{\md\MQ}{\md\MP}\log\left(\frac{\md\MQ}{\md\MP}\right)\right],
+\quad \mbox{if}\; \MQ \ll \MP,
+$$
+and $\CH(\MQ\mid\MP) = +\infty$ otherwise.
+<br/>
+<br/> 
+<h4> Definition </h4>
+<p>A Borel probability measure <span class="math inline">\(\MP\)</span> 
+satisfies the <span><em>transportation-cost information (TCI) inequality of order</em></span> 
+<span class="math inline">\(p\)</span> with constant <span class="math inline">\(C &gt; 0\)</span> 
+(we write: <span class="math inline">\(\MP \in T_p(C)\)</span>) if for every Borel probability measure 
+<span class="math inline">\(\MQ\)</span> on <span class="math inline">\(E\)</span> we have: 
+<span class="math display">\[\label{eq:TCI}
+W_p(\MP, \MQ) \le \sqrt{2C\CH(\MQ\mid\MP)}.\]</span></p>
+<br/>
+<br/>
+TCI is an example of the vast gallery of various inequalities linking transportation cost, relative entropy, 
+and Fisher information. It is impossible to do justice to the enormous literature and its many uses. We refer the reader to an excellent survey by Gozlan and 
+L\'eonard \cite{Gozlansurvey} and the recent book <a href = "https://wolfweb.unr.edu/~asarantsev/test4.html#NewBook"> [NewBook] </a> by Boucheron et al.  
+Talagrand studied concentration for product spaces in \cite{Talagrand3, Talagrand5}. 
+His idea is that a function of many variables which is Lipschitz in any variable but does not depend 
+much on any single variable is close to a constant.  A particularly useful application of TCI inequalities, 
+such as above (for $p\ge 1$), is to prove Talagrand type Gaussian concentration. See  the original article by 
+Talagrand \cite{Talagrand5}, as well as Marton's derivation by using TCI inequality in \cite{Marton}. 
+See also \cite{Bobkov1, C3, Otto}  on relation between TCI and log-Sobolev inequalities. 
+
+<p>In this paper, <span class="math inline">\(\MP\)</span> and <span class="math inline">\(\MQ\)</span> 
+will represent laws of reflecting diffusion processes seen as probability measures on the set of continuous paths 
+equipped with the uniform norm. Specifically we prove TCI inequalities for a certain class of interacting Brownian 
+particle systems, called <span><em>competing Brownian particles</em></span>, with each particle moving as a Brownian motion 
+on the real line with drift and diffusion coefficients dependent 
+on the current rank of this particle relative to other particles. These systems were constructed in 
+<span class="citation" data-cites="BFK"></span> as a model for financial markets; see also 
+<span class="citation" data-cites="CP2010 FernholzBook"></span>. Our inequalities are <span><em>dimension-free:</em></span> 
+that is, the constant <span class="math inline">\(C\)</span> is independent of the number of particles. This allows us to extend the inequality to infinite competing particle systems such as the infinite Atlas model <span class="citation" data-cites="CDSS DemboTsai KolliShkol PalPitman"></span>. This is an improvement over the dimension-dependent inequalities in papers <span class="citation" data-cites="Pal PalShkolnikov"></span> where applications of such inequalities can be found. See also <span class="citation" data-cites="IPS2013 JM2008"></span> on Poincaré inequalities for competing Brownian particles, and <span class="citation" data-cites="4people"></span> on large deviations for these particle systems.</p>
+<p>The result for competing particles is a particular case of a general TCI inequality for normally reflected diffusion processes in convex domains. Reflected diffusions are defined as continuous-time stochastic processes in a certain domain <span class="math inline">\(D \subseteq \BR^d\)</span>. As long as such process is in the interior, it behaves as a solution of a stochastic differential equation (SDE). As it hits the boundary, it is reflected back inside the domain. The simplest case is a <span><em>reflected Brownian motion</em></span>, which behaves as a Brownian motion inside the domain.</p>
+<p>Dimension-free TCI inequalities are remarkable. Most known examples are in the case of product measures which utilize tensorization property of the entropy and the cost. Our examples are far from product measures since they involve motion of particles interacting with one another. Hence, dimension-free TCI inequalities in this context seem interesting. The proof, however, does not require much beyond existing machinery. Our novel contribution is essentially a single observation made in <a href="#eq:nonincreasing-1" data-reference-type="eqref" data-reference="eq:nonincreasing-1">[eq:nonincreasing-1]</a>.</p>
+
+<h2> 1.1. Notation </h2>
+We denote by $a\cdot b = a_1b_1 + \ldots + a_Nb_N$ the dot product of vectors $a, b \in \BR^N$. 
+The Euclidean norm of a vector $a$ is denoted by $\norm{a} := \left[a\cdot a\right]^{1/2}$. The matrix norm of a matrix $A$ is defined as $\norm{A} := \max_{\norm{x} = 1}\norm{Ax}$. We let $\BR_+ := [0, \infty)$. We denote the space $C\left([0, T], \BR^N\right)$ of continuous functions $[0, T] \to \BR^N$ with the sup-norm $\norm{x} := \sup_{0 \le t \le T}\norm{x(t)}$.
+We prove TCI inequality where the Wasserstein-$2$ transportation cost is measured in this norm. 
+
+<h2 id="tci-inequalities-for-competing-brownian-particles"> 1.2. TCI inequalities for competing Brownian particles</h2>
+<p>Fix an integer <span class="math inline">\(N \ge 2\)</span>. For any vector 
+<span class="math inline">\(x = (x_1, \ldots, x_N) \in \BR^N\)</span>, 
+there exists a unique <span><em>ranking permutation</em></span>: a one-to-one mapping <span class="math inline">\(\mP_x : \{1, \ldots, N\} \to \{1, \ldots, N\}\)</span>, with the following properties:</p>
+<ol type="a">
+<li><p><span class="math inline">\(x_{\mP_x(i)} \le x_{\mP_x(j)}\)</span> for 
+<span class="math inline">\(1 \le i &lt; j \le N\)</span>; <span id="defn:ranks" label="defn:ranks">[1]</span></p></li>
+<li><p>if <span class="math inline">\(x_{\mP_x(i)} = x_{\mP_x(j)}\)</span> for 
+<span class="math inline">\(1 \le i &lt; j \le N\)</span>, then <span class="math inline">\(\mP_x(i) &lt; \mP_x(j)\)</span>. 
+<span id="defn:ranks2" label="defn:ranks2">[2]</span></p></li>
+</ol>
+<p>That is, <span class="math inline">\(\mP_x\)</span> arranges the coordinates of <span class="math inline">\(x\)</span> 
+in increasing order, with ties broken by the increasing order of the index (or, <em>name</em>) of the coordinates that 
+are tied.</p>
+<p>Take a filtered probability space <span class="math inline">\((\Omega, \mathcal F, (\mathcal F_t)_{t \ge 0}, \MP)\)</span>, 
+with the filtration satisfying the usual conditions and supporting an <span class="math inline">\(N\)</span>-dimensional 
+Brownian motion <span class="math inline">\(W = (W_1, \ldots, W_N)\)</span>. Fix constants 
+<span class="math inline">\(g_1, \ldots, g_N \in \BR\)</span> and 
+<span class="math inline">\(\sigma_1, \ldots, \sigma_N &gt; 0\)</span>.</p>
+
+<h3> Definition 1.1 </h3>
+<p>Consider a continuous adapted process <span class="math inline">\(X(t) = (X_1(t), \ldots, X_N(t)),\ t \ge 0\)</span>. 
+Let <span class="math inline">\(\mP_t = \mP_{X(t)}\)</span>. We say that <span class="math inline">\(\mP_t^{-1}(i)\)</span> 
+is the <span><em>rank</em></span> of particle <span class="math inline">\(i\)</span> at time 
+<span class="math inline">\(t\)</span>, and <span class="math inline">\(\mP_t(k)\)</span> is the <span><em>name</em></span> of the <span class="math inline">\(k\)</span>th ranked particle at time <span class="math inline">\(t\)</span>. Then the following system of SDE: <span class="math display">\[\label{eq:mainSDE}
+\md X_i(t) = \sum_{k=1}^N1(\mP_t(k) = i)\left(g_k\md t + \sigma_k\md W_i(t)\right),\]</span> for 
+<span class="math inline">\(i = 1, \ldots, N\)</span>, defines a <i> finite system of $N$ competing Brownian particles</i>
+with <i> drift coefficients</i> <span class="math inline">\(g_1, \ldots, g_N\)</span> 
+and <i> diffusion coefficients</i> <span class="math inline">\(\sigma_1^2, \ldots, \sigma_N^2\)</span>. 
+Let <span class="math inline">\(Y_k(t) := X_{(k)}(t) := X_{\mP_t(k)}(t)\)</span> 
+be the position of the <span class="math inline">\(k\)</span>th ranked particle, and let 
+<span class="math inline">\(Z_k(t) := Y_{k+1}(t) - Y_k(t)\)</span> be the gap between 
+the <span class="math inline">\(k\)</span>th and <span class="math inline">\((k+1)\)</span>st ranked particles. 
+The <i> local time </i> <span class="math inline">\(L_{(k, k+1)} = (L_{(k, k+1)}(t), t \ge 0)\)</span> 
+of collision between <span class="math inline">\(k\)</span>th and <span class="math inline">\(k+1\)</span>st 
+ranked particles is defined as the local time of the continuous semimartingale <span class="math inline">\(Z_k\)</span> 
+at zero. The process <span class="math inline">\(L(t) = \left(L_{(1, 2)}(t), \ldots, L_{(N-1, N)}(t)\right)\)</span> is 
+called the <i> vector of local times. </i> </p>
+
+<p>From [Bass1987], this system exists in the weak sense and is unique in law. 
+Strong existence and pathwise unqiueness are proved under the following assumptions [12, 14]: 
+<span class="math display">\[\label{eq:convex-diffusion}
+\sigma^2_n \ge \frac12\left(\sigma^2_{n-1} + \sigma^2_{n+1}\right),\, \mbox{if}\;  
+1 &lt; n &lt; N.\]</span> Similar infinite systems can be defined for 
+<span class="math inline">\(N = \infty\)</span>; then we assume that the vector 
+<span class="math inline">\(X(t) = (X_i(t))_{i \ge 1}\)</span> is <span><em>rankable</em></span>; that is, 
+for every <span class="math inline">\(t\ge 0\)</span> there exists a unique permutation 
+<span class="math inline">\(\mP_{X(t)}\)</span> of <span class="math inline">\(\mathbb{N} := \{1, 2, \ldots\}\)</span> 
+which satisfies conditions (<a href="#defn:ranks" data-reference-type="ref" data-reference="defn:ranks">[1]</a>) 
+and (<a href="#defn:ranks2" data-reference-type="ref" data-reference="defn:ranks2">[2]</a>). 
+They were introduced in <span class="citation" data-cites="PalPitman"></span>. 
+See <span class="citation" data-cites="MyOwn6"></span> for weak existence and uniqueness in law 
+under an assumption on initial conditions, 
+<span class="math display">\[\label{eq:initial-asmp} (4) \hspace{2cm}
+\lim\limits_{n \to \infty}X_n(0) \to \infty\quad \mbox{a.s., and}\quad \sum\limits_{n=1}^{\infty}e^{-\alpha X_n^2(0)} &lt;  
+\infty\quad \mbox{for all}\quad \alpha &gt; 0,\] </span> 
+and the following assumptions on drift and diffusion coefficients: 
+<span class="math display">\[\label{eq:coeff-asmp}
+(5) \hspace{2cm} g_{n}  = g_{n_0}\quad \mbox{and}\quad \sigma_n = \sigma_{n_0}\quad \mbox{for all}\quad n \ge n_0.\]</span> 
+See <span class="citation" data-cites="IKS2013"></span> and <span class="citation" data-cites="MyOwn6"></span> 
+for strong existence and pathwise uniqueness: We need <a href="#eq:convex-diffusion" data-reference-type="eqref" 
+data-reference="eq:convex-diffusion">[3]</a> in addition to 
+<a href="#eq:initial-asmp" data-reference-type="eqref" data-reference="eq:initial-asmp">[4]</a> and 
+<a href="#eq:coeff-asmp" data-reference-type="eqref" data-reference="eq:coeff-asmp">[5]</a>. 
+<span><em>Two-sided infinite systems</em></span>, indexed by <span class="math inline">\(i \in \mathbb Z\)</span>, 
+were introduced in <span class="citation" data-cites="MyOwn11">[2]</span>. The proofs and the results from this paper 
+carry over to that set-up as well.</p>
+
+<h3> Theorem 1.1. </h3>
+
+<p>(a) For an <span class="math inline">\(N \in \mathbb{N} \cup \{\infty\}\)</span> 
+assume that the drift and diffusion coefficients satisfy the following conditions: 
+<span class="math inline">\(g_1 \ge g_2 \ge \ldots\)</span>, and 
+<span class="math inline">\(\sigma_1 = \sigma_2 = \ldots = 1\)</span>. For the case of an infinite system, 
+assume in addition <a href="#eq:initial-asmp" data-reference-type="eqref" data-reference="eq:initial-asmp">[4]</a> 
+and <a href="#eq:coeff-asmp" data-reference-type="eqref" data-reference="eq:coeff-asmp">[5]</a>. 
+Then for every finite <span class="math inline">\(k \le N\)</span>, the distribution of 
+<span class="math inline">\(X = (X_1, \ldots, X_k)\)</span> on <span class="math inline">\(C([0, T], \BR^k)\)</span> 
+satisfies <span class="math inline">\(T_2(C)\)</span> with <span class="math inline">\(C = T\)</span>. 
+
+<p>(b) Assume weak existence and uniqueness in law. For an 
+<span class="math inline">\(N \in \mathbb{N}\cup\{\infty\}\)</span>, 
+and a finite <span class="math inline">\(k \le N\)</span>, 
+the vector of ranked particles <span class="math inline">\(Y = (Y_1, \ldots, Y_k)\)</span> 
+satisfies <span class="math inline">\(T_2(C)\)</span> on <span class="math inline">\(C([0, T], \BR^k)\)</span> 
+with <span class="math inline">\(C = T\sup\limits_{m \ge 1}\sigma_m^2\)</span>.</p>
+
+<p>Theorem 1.1(a) follows from results from [LogConcave]. 
+The more non-trivial Theorem 1.1(b) is based on Theorem 1.2 below, which is the main result of this paper. 
+This is a general result that says that normally reflected Brownian motion 
+in a convex domain satisfies a dimension-free TCI inequality as described below. 
+It turns out that the vector of ranked particles <span class="math inline">\(Y\)</span> 
+is a particular case of such normally reflected Brownian motion in a wedge 
+<span class="math inline">\(\{y = (y_1, \ldots, y_N)\mid y_1 \le \ldots \le y_N\}\)</span>.</p>
+
+<p>Fix <span class="math inline">\(d \ge 2\)</span>, the dimension. In this article a <span><em>domain</em></span> in 
+<span class="math inline">\(\BR^d\)</span> is the closure of an open connected subset. We consider only convex domains. 
+Following <span class="citation" data-cites="Tanaka1979"></span>, we do not impose any additional smoothness conditions 
+on such domain. For every <span class="math inline">\(x \in \partial D\)</span>, we say that a unit vector 
+<span class="math inline">\(y \in \BR^d\)</span> is an <span><em>inward unit normal vector</em></span> at point 
+<span class="math inline">\(x\)</span>, if <span class="math display">\[\label{eq:inward-normal}
+z \in D\quad \mbox{implies}\quad (z - x)\cdot y \ge 0.\]</span> The set of such inward unit normal vectors at 
+<span class="math inline">\(x\)</span> is denoted as <span class="math inline">\(\mathcal N(x)\)</span>. 
+The most elementary example of this is a <span class="math inline">\(C^1\)</span> domain <span class="math inline">\(D\)</span>; 
+that is, with boundary <span class="math inline">\(\pa D\)</span> which can be locally (after a rotation) parametrized 
+as a graph of a <span class="math inline">\(C^1\)</span> function. Then there exists a unique inward unit normal vector 
+<span class="math inline">\(\fn(x)\)</span> at every point <span class="math inline">\(x \in \pa D\)</span>, and 
+<span class="math inline">\(\mathcal N(x) = \{\fn(x)\}\)</span>.</p>
+<p>A more complicated example is a <span><em>convex piecewise smooth domain</em></span>. 
+Fix <span class="math inline">\(m \ge 1\)</span>, the number of faces. Take <span class="math inline">\(m\)</span> 
+domains <span class="math inline">\(D_1, \ldots, D_m\)</span> in <span class="math inline">\(\BR^d\)</span> which are 
+<span class="math inline">\(C^1\)</span> and convex. Let <span class="math inline">\(D = \bigcap_{i=1}^mD_i\)</span>. 
+Assume <span class="math inline">\(D \ne \cap_{j \ne i}D_j\)</span> for every 
+<span class="math inline">\(i = 1, \ldots, m\)</span>;
+ that is, each one of <span class="math inline">\(m\)</span> smooth domains is essential. Assume also that for each 
+<span class="math inline">\(i = 1, \ldots, m\)</span>, <span class="math inline">\(F_i := \pa D\cap\pa D_i\)</span> 
+is a manifold of codimension <span class="math inline">\(1\)</span> and has nonempty relative interior. 
+Then <span class="math inline">\(D\)</span> is called a <span><em>convex piecewise smooth domain</em></span> 
+with <span class="math inline">\(m\)</span> <span><em>faces</em></span> <span class="math inline">\(F_1, \ldots, F_m\)</span>, 
+and <span class="math inline">\(\pa D = \cup_{i=1}^mF_i\)</span>. For every <span class="math inline">\(x \in F_i\)</span>, 
+define the <span><em>inward unit normal vector</em></span> <span class="math inline">\(\fn_i(x)\)</span> 
+to <span class="math inline">\(\pa D_i\)</span> at this point <span class="math inline">\(x\)</span>, pointing inside 
+<span class="math inline">\(D_i\)</span>. For a point <span class="math inline">\(x \in \pa D\)</span> on the boundary, 
+if <span class="math inline">\(I(x) = \{i = 1, \ldots, m\mid x \in F_i\}\)</span>, then 
+<span class="math display">\[\mathcal N(x) = \Bigl\{\sum\limits_{i \in I}\alpha_i\fn_i(x)\mid \alpha_i \ge 0,\quad i \in I;\quad 
+\sum\limits_{i \in I}\alpha_i^2 = 1\Bigr\}.\]</span></p>
+
+<h3> Definition 1.2. </h3> 
+<p>For a vector field <span class="math inline">\(g : \BR_+\times D \to \BR^d\)</span> and a 
+<span class="math inline">\(z_0 \in D\)</span>, consider the following equation: 
+<span class="math display">\[\label{eq:SDE-main}
+(7) \quad Z(t) = z_0 + W(t) +  \int_0^tg(s, Z(s))\,\md s + \int_0^t\fn(s)\,\md \ell(s),\ \ t \ge 0.\]</span> 
+Here, <span class="math inline">\(Z : \BR_+ \to D\)</span> is a continuous adapted process, 
+<span class="math inline">\(W\)</span> is a <span class="math inline">\(d\)</span>-dimensional Brownian motion 
+with zero drift vector and constant, symmetric, positive definite <span class="math inline">\(d\times d\)</span> 
+covariance matrix <span class="math inline">\(A\)</span>, starting from the origin. 
+For every <span class="math inline">\(t \ge 0\)</span>, <span class="math inline">\(\fn(t) \in \BR^d\)</span> is a unit vector, 
+and <span class="math inline">\(\fn : \BR_+ \to \BR\)</span> is a measurable function. 
+The function <span class="math inline">\(\ell : \BR_+ \to \BR\)</span> is continuous, nondecreasing, 
+and can increase only when <span class="math inline">\(Z(t) \in \pa D\)</span>; 
+for such <span class="math inline">\(t\)</span>, <span class="math inline">\(\fn(t) \in \mathcal N(Z(t))\)</span>. 
+The solution <span class="math inline">\(Z\)</span> of (7)
+is called a <span><em>reflected diffusion</em></span> in <span class="math inline">\(D\)</span>, 
+with <span><em>drift</em></span> <span class="math inline">\(g\)</span> and (constant) <span><em>diffusion 
+matrix</em></span> <span class="math inline">\(A\)</span>, starting from <span class="math inline">\(z_0\)</span>. 
+If <span class="math inline">\(g\)</span> is a constant (does not depend on <span class="math inline">\(x\)</span> 
+and <span class="math inline">\(t\)</span>), then we call <span class="math inline">\(Z\)</span> a <span><em>reflected 
+Brownian motion</em></span> (RBM) in <span class="math inline">\(D\)</span> with <span><em>drift</em></span> 
+<span class="math inline">\(g\)</span> and <span><em>diffusion matrix</em></span> <span class="math inline">\(A\)</span>.</p>
+
+<h3> Assumption 1.1. </h3>
+<p>For an integrable function <span class="math inline">\(F : [0, T] \to \BR\)</span>, we have: 
+<span class="math display">\[\label{eq:monotone-F}
+\left(g(t, x) - g(t, y)\right)\cdot(x - y) \le \norm{x-y}^2F(t),\ t \in [0, T],\ x, y \in D,\]</span> 
+<p>Under Assumption 1.1, the equation (7) has a pathwise unique strong solution 
+on time horizon <span class="math inline">\([0, T]\)</span>. 
+This is proved similarly to [Theorem 4.1, Tanaka1979].
+
+<p>We start by proving that, under Assumption 1.1, the reflected diffusion satisfies a dimension-free <span class="math inline">\(T_2(C)\)</span>. 
+Our proof follows existing ideas in <span class="citation" data-cites="Pal LogConcave"></span> 
+for non-reflected diffusions with one notable observation to handle the reflection. 
+Consider an SDE in <span class="math inline">\(\BR^d\)</span> without reflection 
+<span class="math inline">\(\md X(t) = \md W(t) + g(t, X(t))\,\md t\)</span>, 
+for some drift vector field <span class="math inline">\(g\)</span> defined 
+on <span class="math inline">\([0, T]\times \mathbb{R}^d\)</span>, 
+which satisfies <span><em>contraction condition:</em></span> 
+<span class="math display">\[\label{eq:contraction}
+(g(t, x) - g(t, y)) \cdot (x - y) \le 0,\quad \mbox{for all}\quad x, y \in \BR^d,\, t \in [0, T].\]</span> 
+It is shown in [LogConcave] that under condition  the distribution of <span class="math inline">\(X\)</span> 
+in the space <span class="math inline">\(C([0, T], \BR^d)\)</span> satisfies <span class="math inline">\(T_2(C)\)</span> 
+with <span class="math inline">\(C = T\)</span>. Our main observation in this article is that for a reflected diffusion 
+in a convex domain <span class="math inline">\(D\)</span>, 
+the reflection term <span class="math inline">\(\fn(t)\,\md\ell(t)\)</span> plays the role of such drift.</p>
+
+<p>Now comes the crucial observation: <span class="math display">\[\label{eq:nonincreasing-1}
+\fn(t)\cdot(X(t) - X&#39;(t))\,\md\ell(t) \le 0,\quad \text{for all}\; t \ge 0.\]</span></p>
+</body>
+</html>

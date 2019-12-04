@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+<head>
+<title>MathJax TeX Test Page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: {
+      RR: '{\\bf R}',                // a simple string replacement
+      bold: ['\\boldsymbol{#1}',1]   // this macro has one parameter
+    }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+  }
+});
+</script>
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</head>
+
+
+
+
+
+
+<body> <font face = "arial">
+
+<div style="display:none">
+\(
+  \newcommand{\BR}{\mathbb{R}}
+  \newcommand{\non}{\nonumber}
+  \newcommand{\al}{\alpha}
+  \newcommand{\si}{\sigma}
+  \DeclareMathOperator{\Var}{Var}
+\)
+</div>
+
+<h1 id="problems">Problems</h1>
+<p><span><strong>Problem 1.</strong></span> Calculate <span class="math inline">\(3 + 4^2\)</span>.</p>
+
+<p><span><em>Solution.</em></span> <span class="math inline">\(4^2 = 4\times 4 = 16\)</span>, therefore the answer is <span class="math inline">\(3 + 16 = 19\)</span>.</p>
+
+<p><span><strong>Problem 2.</strong></span> If <span class="math inline">\(\mathfrak A = 3\)</span> and <span class="math inline">\(\mathbb{B} = -2\)</span>, find <span class="math inline">\(\mathfrak A + \mathbb{B}\)</span>.</p>
+
+<p><span><strong>Solution.</strong></span> <span class="math inline">\(3 + (-2) = 1\)</span>.</p>
+<h1 id="goals">Goals</h1>
+<p>Students should know:</p>
+<ol>
+<li><p>How to count numbers</p></li>
+<li><p>How to add and subtract</p></li>
+<li><p>How to multiply and divide</p></li>
+</ol>
+
+<p><span class="math display">\[\label{eq:special}
+\mathrm{d}W^2(t) = 2W(t)\mathrm{d}W(t) + \mathrm{d}t.\]</span> 
+This is known from <a href = "#Basic">[1]</a>.
+
+
+<h1> These are our Examples </h1>
+<h2> Math formulas </h2>
+The mapping $\mathcal F : C(\mathbb R) \to \mathbb R$ is defined as $\mathcal F : F \mapsto F(0)$. The image $\mathfrak F := 
+\mathcal F(C(\mathbb R))$ coincides with $\mathbb R$. We can use different notation in LaTeX such as $f, \mathbb f, 
+\mathfrak f$, and all these are different letters. 
+
+<p><span class="math display">\[\label{eq:new}
+x + y = z\]</span> Consider the equation <a href="#eq:new" data-reference-type="eqref" data-reference="eq:new">$\eqref{eq:new}$
+</a></p>
+
+<h3> Some Special Examples of Macros </h3>
+
+$\RR$ is the set of all real numbers. Also it is denoted by $\BR$. $\bold{\alpha}$ is another example. 
+
+<h4> Picture!! </h4>
+
+<figure>
+<img src="mydocs/BMdrift.png" alt="Brownian motion with drift g = 0.4 and diffusion \sigma = .5, starting from 0, 
+and the drift line x = gt" style="width:7cm" />
+<figcaption>Brownian motion with drift <span class="math inline">\(g = 0.4\)</span> 
+and diffusion <span class="math inline">\(\sigma = .5\)</span>, starting from 
+<span class="math inline">\(0\)</span>, and the drift line <span class="math inline">\(x = gt\)</span>
+</figcaption>
+</figure>
+
+
+
+
+<h1 id="sec-MM1-jump"><span class="math inline">\(M/M/1\)</span> Queue in an Interactive Jump Environment </h1>
+<p>Consider an <span class="math inline">\(M/M/1\)</span> queue with an infinite waiting space operating in an interactive jump environment described as follows. Let <span class="math inline">\(\mathcal{Z}\)</span> be a finite or countable state space. We define a two-component Markov process <span class="math inline">\(\mathcal{Y} = (X,Z)\)</span> taking values in the countable state space <span class="math inline">\(\mathbb Z_+ \times \mathcal{Z}\)</span> with the following generator matrix <span class="math inline">\(\mathbf{R}= \big( R[(n,z),(n&#39;,z&#39;)] \big)\)</span>: <span class="math display">\[\begin{aligned}
+ \label{Rmatrix-MM1}
+R[(n,z),(n+1, z)] &amp;=&amp; \alpha_z \lambda_z,   \\
+R[(n,z),(n-1, z)] &amp;=&amp; \alpha_z \mu_z,   \\
+R[(n,z),(n, z&#39;)] &amp;=&amp; \sigma_z  \rho_z^{-n} \tau_n(z,z&#39;),  \\
+R[(n,z),(n&#39;, z&#39;)] &amp;=&amp; 0, \non \\
+R[(n,z),(n, z)] &amp;=&amp;  - \sum_{(n&#39;,z&#39;) \in \mathbb Z_+ \times \mathcal{Z}\setminus \{(n,z)\}} R[(n,z),(n&#39;, z&#39;)],  \non\end{aligned}\]</span> where <span class="math inline">\(\rho_z:= \lambda_z/\mu_z\)</span> for each <span class="math inline">\(z \in \mathcal{Z}\)</span>.</p>
+
+Consider the equation <a href="#eq:new" data-reference-type="eqref" data-reference="eq:special">$\eqref{eq:special}$</a>, 
+which is known from <span class="citation" data-cites="Basic"></span>.</p>
+
+<p><span><strong>Problem 3.3.</strong></span> <span class="math display">\[\mathbb E X^2 = 1^2\cdot \frac16 + 2^2 \cdot \frac16 + \ldots + 6^2\cdot\frac16 = \frac{91}{6}\]</span></p>
+
+<p><span><strong>Problem 3.4.</strong></span> <span class="math display">\[\Var X = \mathbb E(X^2) - (\mathbb E X)^2 = \frac{91}6 - \left(\frac72\right)^2 = \frac{35}{12}.\]</span></p>
+
+<p><span><strong>Problem 3.8.</strong></span> <span class="math inline">\(\mathbb E (2X - 4) = 2\mathbb E X - 4 = 2\cdot\frac72 - 4 = -3\)</span>.</p>
+
+<p><span><strong>Problem 3.11.</strong></span> <span class="math inline">\(\mathbb E(2X - 3Y) = 2\mathbb E X - 3\mathbb E Y = 2\frac72 - 3\frac72 = -\frac72\)</span>.</p>
+
+<p><span class="smallcaps"> <a name = "Basic">[1]</a> Ioannis Karatzas, Steven E. Shreve</span> (1991). 
+Brownian Motion and Stochastic Calculus. <em>Springer</em> Lecture Notes in Mathematics <strong>48</strong>.</p>
+
+
+</body>
+</html>
+
