@@ -12,6 +12,7 @@
 <a href = "https://asarantsev.github.io/WebArchive/teaching_archive.html"> Teaching Archive</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/teaching_evaluations.html"> Evaluations</a>&nbsp; 
 </font>
+</b>
 <hr/>
 
 <div style = "width:50%;float:left;">
