@@ -1,8 +1,8 @@
 <h1> <font face = "arial"> Andrey Sarantsev </font> </h1>
 <hr/>
-<b>
 <font size = "4" face = "arial">
-&nbsp; <a href = "https://asarantsev.github.io/WebArchive/cv.html"> CV</a> &nbsp; 
+  &nbsp; <a href = ""https://asarantsev.github.io/WebArchive/index.html"> Home</a> &nbsp; 
+<a href = "https://asarantsev.github.io/WebArchive/cv.html"> CV</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/papers.html"> Papers</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/research.html"> Research</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/talks.html"> Talks</a> &nbsp; 
@@ -12,7 +12,6 @@
 <a href = "https://asarantsev.github.io/WebArchive/teaching_archive.html"> Teaching Archive</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/teaching_evaluations.html"> Evaluations</a>&nbsp; 
 </font>
-</b>
 <hr/>
 
 <font size="4" face="arial">
