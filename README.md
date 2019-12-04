@@ -48,9 +48,7 @@ Soumik Pal.</a>
 
 <div style = "width:45%; float:left;"> 
 <font size = "4" face = "arial">
-<p> <b> Fall 2019 Teaching:</b> </p>
-<p> <a href = "./stat461_au19.html"> <b>STAT 461</b></a> (Probability Theory) </p>
-<p> <a href = "./stat462_au19.html"> <b>STAT 462</b></a> (Stochastic Processes) </p>
+<p> <b> Spring 2020 Teaching:</b> Stat 706 Ph.D.-level Probability Theory</p>
 <p> <a href = "./notes.pdf"> Lecture Notes on Probability Theory 
 and Stochastic Processes </a> </p>
 <p> <strong> Office: </strong> Davidson Math & Science Center 234 </p>
