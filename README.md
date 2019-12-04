@@ -54,7 +54,7 @@ and Stochastic Processes </a> </p>
 
 <h3> Coauthors: </h3>
 <ol>
-<li> <a href = "https://www.linkedin.com/in/clayton-barnes-251327138"> Clayton Barnes</a>
+<li> <a href = "www.claytonbarnes.com"> Clayton Barnes</a>
 <li> <a href = "https://scholar.google.com/citations?user=kQu0dusAAAAJ&hl=ru"> Yana Belopolskaya</a>
 <li> <a href = "https://www.linkedin.com/in/cambruggeman"> Cameron Bruggeman</a> 
 <li> <a href = "https://www.researchgate.net/profile/Manuel_Cabezas2"> Manuel Cabezas</a> 
@@ -68,6 +68,7 @@ and Stochastic Processes </a> </p>
 <li> <a href = "https://sites.math.washington.edu/~soumik/"> Soumik Pal</a>
 <li> <a href = "http://www.personal.psu.edu/gup3/"> Guodong Pang</a>
 <li> <a href = "https://shanghai.nyu.edu/academics/faculty/directory/vladas-sidoravicius"> Vladas Sidoravicius</a>
+<li> <a href = "https://labs.wsu.edu/mathbio/"> Nikolay Strigul</a>
 <li> <a href = "http://www.statslab.cam.ac.uk/~yms/"> Yuri Suhov</a> 
 <li> <a href = "https://lc-tsai.github.io/"> Li-Cheng Tsai</a> 
 </ol> 
