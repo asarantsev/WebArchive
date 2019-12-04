@@ -1,6 +1,4 @@
-<div style = "height:40pt;" align = "center">
 <h1> <font face = "arial"> Andrey Sarantsev </font> </h1>
-</div>
 <hr/>
 <b>
 <font size = "4" face = "arial">
@@ -59,8 +57,8 @@ and Stochastic Processes </a> </p>
 <p> <strong> Office: </strong> Davidson Math & Science Center 234 </p>
 <p> <strong> E-mail: </strong> <font face = "courier"> asarantsev[_a_ _t_]unr.edu </font> </p>
 <p> <strong> Mail: </strong> 1664 N Virginia St, Reno, NV 89557 </p>
-<p> <b> Accessible LaTeX Mathematics </b> &nbsp; <a href = "https://asarantsev.github.io/WebArchive/accessdetail.html">[short]</a> 
-&nbsp; <a href = "https://asarantsev.github.io/WebArchive/accessdetail.html">[detailed]</a> &nbsp; 
+<p> <b> Accessible LaTeX Mathematics </b> &nbsp; <a href = "./accessdetail.html">[short]</a> 
+&nbsp; <a href = "./accessdetail.html">[detailed]</a> &nbsp; 
 <a href = "./access.pdf">[PDF]</a>
 </font>
 </div>
