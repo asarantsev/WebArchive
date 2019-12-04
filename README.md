@@ -15,7 +15,6 @@
 </b>
 <hr/>
 
-<div style = "width:50%;float:left;">
 <font size="4" face="arial">
 <p> Starting from July 2018, I am a tenure-track Assistant Professor at the 
 <a href = "http://www.unr.edu/math/"> Department of Mathematics and Statistics,</a> 
@@ -40,14 +39,6 @@ Soumik Pal.</a>
 <a href = "https://www.linkedin.com/in/andrey-sarantsev-0974242a"> My LinkedIn</a> &nbsp; &nbsp;
 </h3>
 </font>
-</div>
- 
-
-<div style = "width:5%; float:left;">
-<p> </p>
-</div>
-
-<div style = "width:45%; float:left;"> 
 <font size = "4" face = "arial">
 <p> <b> Spring 2020 Teaching:</b> Stat 706 Ph.D.-level Probability Theory</p>
 <p> <a href = "./notes.pdf"> Lecture Notes on Probability Theory 
@@ -59,5 +50,25 @@ and Stochastic Processes </a> </p>
 &nbsp; <a href = "./accessdetail.html">[detailed]</a> &nbsp; 
 <a href = "./access.pdf">[PDF]</a>
 
- 
+<strong> My Ph.D. thesis:</strong> <a href = "./thesis.pdf"> Competing Brownian Particles</a> 
+
+<h3> Coauthors: </h3>
+<ol>
+<li> <a href = "https://www.linkedin.com/in/clayton-barnes-251327138"> Clayton Barnes</a>
+<li> <a href = "https://scholar.google.com/citations?user=kQu0dusAAAAJ&hl=ru"> Yana Belopolskaya</a>
+<li> <a href = "https://www.linkedin.com/in/cambruggeman"> Cameron Bruggeman</a> 
+<li> <a href = "https://www.researchgate.net/profile/Manuel_Cabezas2"> Manuel Cabezas</a> 
+<li> <a href = "http://statweb.stanford.edu/~adembo/"> Amir Dembo</a> 
+<li> <a href = "http://pierre-olivier.goffard.me/"> Pierre-Olivier Goffard</a> 
+<li> <a href = "http://www.pstat.ucsb.edu/faculty/ichiba/"> Tomoyuki Ichiba</a> 
+<li> <a href = "http://www.math.utah.edu/~davar/"> Davar Khoshnevisan</a> 
+<li> <a href = "http://www.pstat.ucsb.edu/faculty/ludkovski/"> Michael Ludkovski</a> 
+<li> <a href = "http://www.math.columbia.edu/~ik/"> Ioannis Karatzas</a> 
+<li> <a href = "https://scholar.google.com/citations?user=0wgkJ5IAAAAJ&hl=en"> Aditya Maheshwari</a> 
+<li> <a href = "https://sites.math.washington.edu/~soumik/"> Soumik Pal</a>
+<li> <a href = "http://www.personal.psu.edu/gup3/"> Guodong Pang</a>
+<li> <a href = "https://shanghai.nyu.edu/academics/faculty/directory/vladas-sidoravicius"> Vladas Sidoravicius</a>
+<li> <a href = "http://www.statslab.cam.ac.uk/~yms/"> Yuri Suhov</a> 
+<li> <a href = "https://lc-tsai.github.io/"> Li-Cheng Tsai</a> 
+</ol> 
 
