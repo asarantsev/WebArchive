@@ -1,7 +1,7 @@
 <h1> <font face = "arial"> Andrey Sarantsev </font> </h1>
 <hr/>
 <font size = "4" face = "arial">
-  &nbsp; <a href = ""https://asarantsev.github.io/WebArchive/index.html"> Home</a> &nbsp; 
+  &nbsp; <a href = "https://asarantsev.github.io/WebArchive/index.html"> Home</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/cv.html"> CV</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/papers.html"> Papers</a> &nbsp; 
 <a href = "https://asarantsev.github.io/WebArchive/research.html"> Research</a> &nbsp; 
