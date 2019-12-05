@@ -70,5 +70,5 @@ and Stochastic Processes </a> </p>
 <li> <a href = "https://labs.wsu.edu/mathbio/"> Nikolay Strigul</a>
 <li> <a href = "http://www.statslab.cam.ac.uk/~yms/"> Yuri Suhov</a> 
 <li> <a href = "https://lc-tsai.github.io/"> Li-Cheng Tsai</a> 
-</ol>
+  </ol>
 
