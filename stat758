@@ -1,0 +1,61 @@
+<h3>General Information</h3>
+<ul>
+<li><strong>Instructor:</strong><span>&nbsp;</span>Andrey Sarantsev</li>
+<li><strong>Dates:</strong><span>&nbsp;</span>Aug 24 - Dec 8</li>
+<li><strong>Times:</strong><span>&nbsp;</span>Mon, Wed, Fri 11:00-11:50</li>
+<li><strong>Place:<span>&nbsp;</span></strong>Ansari Business (AB) 206</li>
+<li><strong>Email:</strong><span>&nbsp;</span>[asarantsev] [at] unr [dot] edu</li>
+<li><strong>Office:</strong><span>&nbsp;</span>Davidson Math &amp; Science Center (DMSC) 234</li>
+<li><strong>Prerequisites:</strong><span>&nbsp;</span>STAT 461 /661(Probability I) with a C or better</li>
+</ul>
+<h3>Office Hours</h3>
+<p>Mon, Tue 14:30-16:30 in my office/via Zoom, or by appointment.<span>&nbsp;</span><span>Before the final exam, additional office hours will be announced.</span></p>
+<h3>Textbooks</h3>
+<p><span><strong>Required:</strong> Peter J. Brockwell, Richard A. Davis (2016). <em>Introduction to Time Series and Forecasting.</em> Third edition. Springer Series in Statistics.&nbsp;</span></p>
+<p><span><strong>Optional:</strong> R</span><span style="font-family: inherit; font-size: 1rem;">obert H. Shumway, D</span><span style="font-family: inherit; font-size: 1rem;">avid S. Stoffer (2017).&nbsp;</span><span><em>Time Series Analysis and Its Applications.</em> Fourth edition. Springer Series in Statistics.&nbsp;</span></p>
+<p><span><strong>Optional:</strong> Ruey S. Tsay (2010). <em>Analysis of Financial Time Series.</em> Third edition. Wiley Series in Probability and Statistics.&nbsp;</span></p>
+<p><span>Additionally, <a href="https://wolfweb.unr.edu/homepage/zal/STAT758_Fall06.htm">web page of Ilia Zaliapin</a> can be useful.</span></p>
+<h3>Student Learning Outcomes</h3>
+<p><span>Upon completion of this course, students will be able to:</span></p>
+<ol>
+<li><span>Construct and mathematically analyze basic time series models (white noise, random walk, moving average), apply the time domain (SARIMA, GARCH) and spectral domain (Fourier analysis, spectral filtering) modeling and verification to a given time series.</span></li>
+<li><span>Perform second-order forecasting and forecast quality assessment for a given time series.</span></li>
+<li><span>Implement essential time series analyses in a professional </span><span class="acalog-highlight-search-1">stat</span><span>istical package, perform independent time series analysis projects, write project reports and present the results to a professional audience, and Independently build time series analysis proficiency using professional literature.</span></li>
+</ol>
+<h3>Topics Covered</h3>
+<p>&bull; Descriptive techniques<br />&bull; Stochastic processes, stationarity, simple time-series models<br />&bull; Time domain methods (ARMA, ARIMA, SARIMA, Box-Jenkins approach, GARCH)<br />&bull; Forecasting<br />&bull; Frequency domain methods, spectral analysis</p>
+<p>We will use Python. <a class="instructure_file_link instructure_scribd_file" title="test.py" href="/courses/58969/files/5099379/download?wrap=1">An example is here.</a></p>
+<h3>Homework Assignments</h3>
+<p>There are 13 homework assignments due on Tuesdays 23:00. Each includes math and most contain coding. Submission is online, via Web Campus. You can scan or take a photo of your work and upload it on Web Campus. Alternatively, you can type it in Word or LaTeX. This homework will be posted to Web Campus at least a week in advance, and graded by a homework grader inside Web Campus. In addition, there is an Extra Credit assignment due Tuesday after Thanksgiving, December 1, 23:00.</p>
+<h3>Exams</h3>
+<p>There are no midterms. There is an (optional) final exam, you can take it if you are not satisfied with your class grade before the final. It will take place on Wednesday, December 16, 07:30-09:30. <span style="font-family: inherit; font-size: 1rem;">You can have a standard note sheet: 8.5x11 inches, handwritten, two-sided. You do not need to submit it after the exam. Calculators are allowed. There are 10 problems, similar to homework assignments. Practice exams and additional office hours will be available. The Proctorio software will be used.</span></p>
+<h3>Grading Scheme</h3>
+<p>You are allowed to drop the lowest homework. Each homework is worth 6.5%, extra credit is worth 7%, and the final exam is worth 22%. This class is not a competitive environment. I wish every one of you succeeds. Therefore, your grade depends on your own total score, calculated as above. As an example, getting your total score above 90% guarantees you an A, regardless of what the rest of the class did. Relative comparison of students (``the curve'') will be used to push grades up, not down.</p>
+<ul>
+<li>A: top 10% of class or total score above 90%</li>
+<li>A-: next 10% or total score above 86%</li>
+<li>B+: next 10% or total score above 82%</li>
+<li>B: next 10% or total score above 78%</li>
+<li>B-: next 10% or total score above 74%</li>
+<li>C+: total score above 70%</li>
+<li>C: total score above 65%</li>
+<li>C-: total score above 60%</li>
+<li>D: total score above 50%</li>
+<li>F: total score below 50%</li>
+</ul>
+<h3>Make-Up Work</h3>
+<p>For religious holidays, exceptional family events, participation in University-sponsored activities, scientific conferences, athletic, or other similar events, arrangements must be made at least 3 days in advance. You will be required to provide documentation for your absence. Then we can arrange for the make-up exam or homework deadline extension.</p>
+<h3>Recommendation Letters</h3>
+<p>If you are applying to Master, PhD, or other graduate programs, and if you got an A or A- in this class, I can write you a recommendation letter. I can also proofread your statement and CV. Please send me your photo, CV, statement, and a list of schools your are applying to, together with exact names of programs, and application deadlines. If you wish to get recommendation letter for a non-academic job, it is enough to get a C or above.</p>
+<h3>Requests and Complaints</h3>
+<p>Please do not hesitate to speak with the professor directly. If this did not resolve the issue, please speak to the<span>&nbsp;</span><a class="external" href="https://www.unr.edu/math/people/tin-yau-tam" target="_blank" rel="noopener"><span>Department Chair Tin Yau Tam</span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a><span>&nbsp;</span>or<a class="external" href="https://www.unr.edu/math/student-resources/academic-advising" target="_blank" rel="noopener"><span>Undergraduate Advisors.</span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<h3>Academic Success Services</h3>
+<p>Your student fees cover usage of the<span>&nbsp;</span><a class="external" href="https://www.unr.edu/math-center" target="_blank" rel="noopener"><span>University Math Center</span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a><span>&nbsp;</span>(775) 784-4433,<span>&nbsp;</span><a class="external" href="https://www.unr.edu/tutoring-center" target="_blank" rel="noopener"><span>University Tutoring Center</span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a><span>&nbsp;</span>(775) 784-6801,<span>&nbsp;</span><a class="external" href="https://www.unr.edu/writing-speaking-center" target="_blank" rel="noopener"><span>University Writing Center</span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a><span>&nbsp;</span>(775) 784-6030. These centers support your classroom learning; it is your responsibility to take advantage of their services. Keep in mind that seeking help outside of class is the sign of a responsible and successful student. Online services are also available.</p>
+<h3>Academic Dishonesty</h3>
+<p>You are expected to do your own work. Any violation of University policy on academic dishonesty won&rsquo;t be tolerated. Cases involving academic dishonesty will be handled according to the procedures outlined in University of Nevada Reno policies. Violations of the University&rsquo;s academic code include, but are not limited to possession of, or use of unauthorized materials during tests; providing information to another student; copying the work of another person without correct citation etc. Violations may result in academic penalties, including receiving an F in this course. The university may also impose other penalties including suspension or dismissal. There will be ZERO Tolerance for Cheating and Plagiarism<strong>. </strong><span style="font-family: inherit; font-size: 1rem;">For more details on violations please visit website: </span><a style="font-family: inherit; font-size: 1rem;" href="https://www.unr.edu/administrative-manual/6000-6999-curricula-teaching-research/6502-academic-standards">https://www.unr.edu/administrative-manual/6000-6999-curricula-teaching-research/6502-academic-standards</a></p>
+<h3>Disability and Accessibility</h3>
+<p>A student with a disability that qualifies for accommodations should contact Disability Resource Center (Thompson Bldg., Suite 101, call: 775-784-6000, email: <u>maryac@unr.edu</u> or visit online: <a href="https://www.unr.edu/drc">https://www.unr.edu/drc</a>). A student wishing to receive test accommodations (e.g., extended test time) should provide the instructor with an official Accommodation Form from Disability Resource Center <em><u>within the first week of class</u></em>. This class may use outside content. If you have trouble with its accessibility please contact me.&nbsp;</p>
+<h3>Recording</h3>
+<p>Surreptitious or covert video-taping of class or unauthorized audio recording of class is prohibited by law and by Board of Regents policy. This class may be videotaped or audio recorded only with the written permission of the instructor. In order to accommodate students with disabilities, some students may be given permission to record class lectures and discussions. Therefore, students should understand that their comments during class may be recorded.</p>
+<p><span style="font-size: 18pt;">Safe Learning and Work Environment</span></p>
+<p>The University of Nevada, Reno is committed to providing a safe learning and work environment for all. If you believe you have experienced discrimination, sexual harassment, sexual assault, domestic/dating violence, or stalking, whether on or off campus, or need information related to immigration concerns, please contact the University's Equal Opportunity and Title IX office at 775-784-1547. Resources and interim measures are available to assist you. For more information, please visit:<span>&nbsp;</span><a href="https://www.unr.edu/equal-opportunity-title-ix">https://www.unr.edu/equal-opportunity-title-ix</a><span><u>.</u></span><span> Please, remember as a Responsible Employee, all course instructors are required to report all incidents of Sexual Violence to the University&rsquo;s Equal Opportunity and Titile IX office. During online discussions, please be polite and respectful.</span></p>
