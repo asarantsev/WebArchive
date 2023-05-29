@@ -6,7 +6,7 @@ def index():
   if request_method == 'POST':
     text = request.form['text']
     result - calculation(text)
-    return render_template('simulator.html')
+    return render_template('Simulator.html')
   
 def calculation(text):
   try: 
