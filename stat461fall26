@@ -1,0 +1,191 @@
+<html>
+<head>
+
+
+<title > Probability Theory. Stat 461/661. Spring 2024 </title>
+</head>
+
+
+<body>
+<div style = "height:40pt; width:100%;" align = "center">
+<font size = "6" face = "arial"> <b> Probability Theory. Stat 461/661. Spring 2024 </b> </font>
+</div>
+ 
+ <hr/>
+<font size = "4" face = "arial"> &nbsp; 
+<a href = "./index.html"> Home</a> &nbsp;
+<a href = "./cv.html"> CV</a> &nbsp; 
+<a href = "./papers.html"> Articles</a> &nbsp; 
+<a href = "http://arxiv.org/a/sarantsev_a_1.html"> arXiv</a> &nbsp; 
+<a href = "https://scholar.google.com/citations?user=AFbuANsAAAAJ&hl=en&oi=ao"> Google Scholar</a> &nbsp; 
+<a href = "https://www.researchgate.net/profile/Andrey_Sarantsev2"> ResearchGate</a> &nbsp;
+<a href = "https://github.com/asarantsev"> GitHub</a> &nbsp;
+<a href = "http://orcid.org/0000-0002-7415-4892"> ORCID</a> &nbsp;
+<a href = "https://mathscinet.ams.org/mathscinet/author?authorId=1061889"> MathSciNet</a> &nbsp; 
+<a href = "https://www.linkedin.com/in/asarantsev/"> LinkedIn</a> &nbsp;
+<a href = "https://asarantsev.pythonanywhere.com/"> Simulator</a> &nbsp;
+<a href = "https://my-finance.org/"> Blog</a> &nbsp;
+<a href = "./data.html"> Financial Data</a> 
+</font>
+<hr/>
+
+<font size = "4" face = "arial">
+
+<p><strong>Course Title &amp; Number:&nbsp;</strong><span class="acalog-highlight-search-1">STAT</span> 461/661 A First Course in Probability</p>
+<p><strong>Instructor: </strong><a class="inline_disabled" href="https://asarantsev.github.io/WebArchive/" target="_blank" rel="noopener">Andrey Sarantsev</a></p>
+<p><strong>Date &amp; Time:</strong> MW 13:00-14:15</p>
+<p><strong>Place:</strong> Palmer Engineering (PE) 104</p>
+<p><strong>Office Hours:</strong> <span>Monday, Wednesday 10:15-12:00, 14:30-15:45, Tuesday 13:00-17:00, or by appointment</span></p>
+<p><strong>Instructor's Office:</strong> Davidson Mathematics &amp; Science Center (DMSC) 234</p>
+<p><strong>Email:</strong> <a href="mailto:asarantsev@unr.edu" target="_blank" rel="noopener">asarantsev@unr.edu</a></p>
+<p><strong>Phone:</strong> (775) 784-6788</p>
+<p><strong>Contact:</strong> There are four ways to contact me. I list them from more to less preferred.</p>
+<ol style="list-style-type: decimal;">
+    <li>Come to office hours in person, or schedule an in-person appointment</li>
+    <li>Email me (I usually respond within a few hours)</li>
+    <li>Send online message via Web Campus (I respond to them slower than to email)</li>
+    <li>Contact me via Zoom: my personal meeting room, link will be sent upon request</li>
+</ol>
+<p><strong>Class Procedure:<span>&nbsp;</span></strong><span>This course will be delivered in person. Students will be required to access the homework assignments via Canvas. The course schedule will be posted on Canvas and updated weekly, and announcements may be posted there periodically. Exams will be given in person during class. It is your responsibility to check the schedule each week, but I will start each class with announcements reminding you of upcoming deadlines. I will also hold extra office hours before the final exam.</span></p>
+<p><strong>Prerequisites:</strong> MATH 283 with a C or above.&nbsp;</p>
+<p><strong>Topics:</strong> <span>Experiments, counting techniques, probability axioms; random variables, expectation, univariate and multivariate distribution theory, measures of association, conditional probability, Bayes theorem, sequences of random variables, Chebyshev's inequality, Law of Large Numbers, and Central Limit Theorem.</span></p>
+<p><strong>Student Learning Outcomes:</strong> <span>Upon completion of this course, students will be able to:</span></p>
+<ol style="list-style-type: decimal;">
+    <li><span>demonstrate understanding of randomness and be able to use probability models to explain simple random phenomena. In addition, students will be able to compute summaries of probability distributions (univariate and multivariate)</span></li>
+    <li><span>compute measures of location, dispersion, and association, as well as probability of interest for many univariate and multivariate distributions</span></li>
+    <li><span>assess and make use of the asymptotic results provided by the Law of Large Numbers and the Central Limit Theorem and their connection to the estimates of quantities from data</span></li>
+</ol>
+<p><span><strong>Course Materials:</strong> Larsen &amp; Marx, <a class="instructure_file_link instructure_scribd_file inline_disabled" title="larsen-marx.pdf" href="/courses/149795/files/18732728?location=course_syllabus_149795&amp;wrap=1" target="_blank" rel="noopener"><em>An Introduction to Mathematical Statistics</em></a> (any edition). See my lecture notes in Probability or Janko Gravner's <a class="instructure_file_link instructure_scribd_file inline_disabled" title="gravner.pdf" href="/courses/149795/files/18732729?location=course_syllabus_149795&amp;wrap=1" target="_blank" rel="noopener">lecture notes</a>. See also <a class="instructure_file_link instructure_scribd_file inline_disabled" title="SOAexamP.pdf" href="/courses/149795/files/18732727?location=course_syllabus_149795&amp;wrap=1" target="_blank" rel="noopener">Society of Actuaries Probability Exam</a> questions.</span></p>
+<p><strong style="font-family: inherit; font-size: 1rem;">Homework:</strong><span style="font-family: inherit; font-size: 1rem;"> Due 17:00 Wednesday, starting from the third week, except the weeks of the two midterms. You must submit this on paper, there is no electronic submission. You can submit it in my office, hand in person or slide under the door if I am absent, or during the classroom on Monday (but not Wednesday).&nbsp;</span></p>
+<p><span><strong>Topics Outline:</strong> Readings are from the sections of Larsen &amp; Marx's textbook.</span></p>
+<table style="border-collapse: collapse; width: 55.7827%; height: 394px;" border="1">
+    <caption>Course Schedule</caption>
+    <tbody>
+        <tr style="height: 51px;">
+            <th style="width: 10.5578%; text-align: center; height: 51px;" scope="col">Week</th>
+            <th style="width: 75.1992%; height: 51px;" scope="col">Topics, Readings</th>
+            <th style="width: 14.243%; height: 51px;" scope="col">Assignment Due Dates</th>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">1</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Combinatorics, section 2.6</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">September 9</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">2-3</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Probability axioms, sections 2.2, 2.3, 2.4</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">September 16</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">4</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Independent events, section 2.5</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">September 23</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">5</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Combinatorial probability, sections 2.6, 2.7</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">September 30</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">6-7</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Discrete and continuous random variables, sections 3.3, 3.4</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">October 14</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">8</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Cumulative distributions functions</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">October 21</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">9</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Binomial and hypergeometric distributions; mean, median, mode, variance, sections 3.2, 3.5, 3.6</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">October 28</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">10</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Joint distributions and independence, sections 3.7, 3.9</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">November 4</td>
+        </tr>
+        <tr style="height: 53px;">
+            <td style="width: 10.5578%; text-align: center; height: 53px;">11-12</td>
+            <td style="width: 75.1992%; text-align: center; height: 53px;">
+                <p>Moment generating functions, common discrete and continuous distributions, sections 3.10, 3.12, 4.2-4.6</p>
+            </td>
+            <td style="width: 14.243%; text-align: center; height: 53px;">November 18</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">13</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">Transformations of random variables, section 3.8</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">November 25</td>
+        </tr>
+        <tr style="height: 29px;">
+            <td style="width: 10.5578%; text-align: center; height: 29px;">14</td>
+            <td style="width: 75.1992%; text-align: center; height: 29px;">The Law of Large Numbers and the Central Limit Theorem, section 4.3&nbsp;</td>
+            <td style="width: 14.243%; text-align: center; height: 29px;">December 3, 8</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Exams:</strong> 
+There are two midterms, October 5 and November 9, both on Monday, during the class time. Each midterm has 5 problems. 
+There is the final exam, December 14, Monday 12:45-14:45, in the same classroom, with 8 problems, cumulative. 
+Extra office hours before exams might be available. Exams contain only theory problems, no coding. 
+See past final exams in Files and Pages tabs.&nbsp;</p>
+
+<p><strong>Grading:</strong> Homework 33%, each midterm 20%, final exam 27%. 
+You can drop the lowest homework. To get the letter grade you need to get at least the following weighted class score: 
+A: 90%, A-: 87%, B+: 84%, B: 80%, B-: 75%, C: 67%, D: 60%, F below 60%.</p>
+
+<p><span><strong>Statement for academic success services:</strong>&nbsp;
+Your student fees cover usage of the&nbsp;
+<a class="inline_disabled" href="https://www.unr.edu/university-math-center" target="_blank" rel="noopener">University Math Center</a>,&nbsp;<a class="inline_disabled" href="https://www.unr.edu/tutoring-center" target="_blank" rel="noopener">University Tutoring Center</a>, and&nbsp;<a class="inline_disabled" href="https://www.unr.edu/writing-speaking-center" target="_blank" rel="noopener">University Writing and Speaking Center</a>. These centers support your classroom learning; it is your responsibility to take advantage of their services. Keep in mind that seeking help outside of class is a sign of a responsible and successful student.</span></p>
+
+<p><span><strong>Statement on dual class:</strong> This is a combined class. 
+Homework assignments and exams will be almost the same for undergraduate and graduate students, 
+but graduate students will usually see an extra problem or a harder version of the same problem in each homework or exam.</span></p>
+
+<p><span><strong>Statement on academic dishonesty:&nbsp;</strong>The University Academic Standards Policy defines academic dishonesty and mandates specific sanctions for violations. See the University Academic Standards policy:&nbsp;<a class="inline_disabled" href="https://www.unr.edu/administrative-manual/6000-6999-courses-curricula-and-organizational-change-process/6502-academic-standards" target="_blank" rel="noopener">University Administrative Manual 6502</a>.</span></p>
+
+<p><strong>Make-up/Late Policy:<span>&nbsp;</span></strong>Late homework will not be graded 
+but may be turned in late to be graded on completion for a penalty. There will be no early or makeup exams, 
+unless there is a compelling reason (medical/family emergency, university approved activity, religious holiday). 
+Students participating in official university activities that interfere with exams must make arrangements with me 
+at least two weeks prior to the exam in question. UNR policies are provided in
+<span>&nbsp;</span><a class="inline_disabled" href="https://www.unr.edu/administrative-manual/3000-3999-students/3020-class-absence-policy" target="_blank" rel="noopener">UAM 3020</a><span>&nbsp;</span>and at<span>&nbsp;</span><a class="inline_disabled" href="https://med.unr.edu/shc/insurance/clinic-policies" target="_blank" rel="noopener">UNR Clinic Insurance</a>.&nbsp;Any student requiring accommodations through the DRC must schedule their exams on the same day as the in-class exam.</p>
+
+<p><span><strong>Statement on disability services:</strong>&nbsp;Any student with a disability needing academic adjustments or accommodations is requested to speak with me or the&nbsp;<a class="inline_disabled" href="https://www.unr.edu/drc" target="_blank" rel="noopener">Disability Resource Center</a>&nbsp;as soon as possible to arrange for appropriate accommodations.</span></p>
+
+<p><span><strong>Statement on content accessibility:</strong>&nbsp;This course may leverage 3rd party web/multimedia content. 
+If you experience any issues accessing this content, please notify your instructor. 
+See also&nbsp;<a class="inline_disabled" href="https://www.unr.edu/accessibility" target="_blank" rel="noopener">the UNR Accessibility</a>&nbsp;web page.</span></p>
+
+<p><span><strong>Preferred Names:</strong>&nbsp;If your preferred name is not the same as the name that appears
+on the university provided roster for the course, please let me know so that I can use your preferred name.</span></p>
+
+<p><strong>Student-created recordings:</strong><span>&nbsp;</span>Surreptitious or covert video-taping of class or 
+unauthorized audio recording of class is prohibited by law and by Board of Regents policy. 
+This class may be videotaped or audio recorded only with the written permission of the instructor. 
+In order to accommodate students with disabilities, some students may have been given permission to record class lectures 
+and discussions. Therefore, students should understand that their comments during class may be recorded.</p>
+
+<p><strong>Instructor-created recordings:</strong><span>&nbsp;</span>Class sessions may be audio-visually recorded for students
+in the class to review and for enrolled students who are unable to attend live to view. 
+Students who participate with their camera on or who use a profile image are consenting&nbsp; 
+to have their video or image recorded. If you do not consent to have your profile or video image recorded, 
+keep your camera off and do not use a profile image. Students who un-mute during class and participate orally 
+are consenting to have their voices recorded. If you do not consent to have your voice recorded during class, 
+keep your mute button activated and only communicate 
+by using the<span>&nbsp;</span><em>chat</em><span>&nbsp;</span>feature, 
+which allows you to type questions and comments live.</p>
+
+<p><strong>Statement on maintaining a safe learning and work environment:<span>&nbsp;</span></strong><span>The University of Nevada, Reno is committed to providing a safe learning and work environment for all. If you believe you have experienced discrimination, sexual harassment, sexual assault, domestic/dating violence, or stalking, whether on or off campus or need information related to immigration concerns, please contact the&nbsp;<a class="inline_disabled" href="https://www.unr.edu/civil-rights" target="_blank" rel="noopener">University's Office of Civil Rights &amp; Equal Access</a>.</span></p>
+<p><strong>Statement on failure to comply with policy:<span>&nbsp;</span></strong>In accordance with<span>&nbsp;</span><a class="inline_disabled" href="https://www.unr.edu/administrative-manual/6000-6999-courses-curricula-and-organizational-change-process/6502-academic-standards" target="_blank" rel="noopener">section 6502 of the University Administrative Manual</a>, a student may receive academic and disciplinary sanctions for failure to comply with the policy, including this syllabus, for failure to comply with the directions of a University Official, for disruptive behavior in the classroom, or any other prohibited action.<span>&nbsp;</span><em>Disruptive behavior</em><span>&nbsp;</span>is defined in part as behavior, including but not limited to failure to follow course, laboratory, or safety rules, or endangering the health of others. A student may be dropped from class at any time for misconduct or disruptive behavior in the classroom upon the recommendation of the instructor and with the approval of the college dean. A student may also receive disciplinary sanctions through the Office of Student Conduct for misconduct or disruptive behavior, including endangering the health of others, in the classroom. The student shall not receive a refund for course fees or tuition.</p>
+<p><strong>Statement on campus closures and delays</strong>: In the event of class cancelations or delays caused by inclement weather conditions, fire/smoke conditions, or other unforeseen emergencies, the safety and well-being of students are the University&rsquo;s top priority. Official notifications will be disseminated through the University website and other official channels with details related to any campus delays or closures. In the event of a campus closure, you will be informed as to whether the class will be offered remotely or if it will be canceled. If the class is canceled, you will receive information on how to address any missed course content. Students facing significant impacts due to these events are encouraged to communicate with their instructor for potential accommodations.</p>
+<p><strong>Communications:</strong><span>&nbsp;</span>The best way is to email the instructor: I check this email most frequently. Another option is to email me via Web Campus.&nbsp;</p>
+<p><span><strong>Statement on AI Use:&nbsp;</strong> This course assumes that all work submitted by students (which includes all process work, drafts, brainstorming artifacts, final works) will be generated by the students themselves, working individually or in groups as directed by course assignment instructions. This policy indicates the following constitute violations of academic honesty and <em>cheating</em>: any unauthorized use of generative AI tools, as outlined in UNR Academic Integrity Policy: <a class="inline_disabled" href="https://www.unr.edu/administrative-manual/6000-6999-courses-curricula-and-organizational-change-process/6502-academic-standards" target="_blank" rel="noopener">UAM 6502</a>. My guiding principle for distinguishing between appropriate and the inappropriate/unauthorized use of generative AI tools are:</span></p>
+<ul>
+    <li><span>that these tools are useful, but not fool proof, and should be used with critical oversight;&nbsp;</span></li>
+    <li><span>that there is a crucial difference between use for the goal of learning the course material versus how you might use generative AI outside of class towards other goals (e.g., a statistical analysis at work).</span></li>
+</ul>
+<p><span>Thus, your use of generative AI in this course (prohibited for exams) should be a more restricted set of activities, and should facilitate learning. Most use cases are covered by treating AI tools as classmates and asking:&nbsp;<em>Would it be appropriate for me to get this assistance from a classmate?</em>&nbsp;If you use AI in this course, you must include a statement summarizing how it was used in your submitted work. Please reach out to me if you have any questions or concerns.&nbsp;</span><span>See also this&nbsp;<a class="inline_disabled" href="https://www.unr.edu/ai/students" target="_blank" rel="noopener">UNR AI</a>&nbsp;web page.</span></p>
+<p><strong>Mental Health Support Statement:</strong>&nbsp;There are times when you may experience difficulties in life, and you may benefit from seeking help. Mental health services are available to you as a student at no additional cost through Counseling Services at the Pennington Student Achievement Center. This includes same-day in-person and tele mental health initial consultations, brief individual counseling, and group counseling sessions. Limited same-day appointments can be scheduled online via&nbsp;<a href="https://www.unr.edu/counseling">Counseling Services</a> or by calling 775-784-4648. Additional brief drop-in <em>Let's Talk</em> student consultations are also available in the Counseling Services Annex located at the southwest corner of Great Basin Hall.</p>
+<p><strong>Veteran Statement:</strong><span>&nbsp;</span>Veterans, Reservists, National Guard and military connected family members may wish to check the office of<span>&nbsp;</span><a href="https://www.unr.edu/veteran">Veteran Services</a>&nbsp;for benefits and support. Besides processing VA educational benefits, the department offers a variety of programs year-round to support student academic and personal success while transitioning to higher education and throughout your educational experience. They welcome inquiries regarding VA benefits and assist in navigating resources, the campus, and in the Reno community.</p>
